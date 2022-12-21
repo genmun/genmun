@@ -2,19 +2,24 @@
 
 ## Website
 
+### General
 - [x] Setting up **(2022-12-13)**
 - [ ] Domain name
+- [ ] SEO
 
 ### Desigining
-- [ ] Theme
-- [ ] CSS color scheme and fonts
-- [ ] Header and navigation bar
-- [ ] Footer
+- [ ] CSS
+    - [ ] Color Scheme (google)
+    - [x] Font **(2022-12-21)**
+- [x] Header **(2022-12-19)**
+    - [x] Navigation bar **(2022-12-15)**
+    - [x] Navigation bar mobile **(2022-12-18)**
+- [x] Footer **(2022-12-21)**
+- [x] Theme **(2022-12-21)**
 
 ## Content
 
 ### Content
-
 - [ ] Home
     - [ ] Awards
 - [ ] About
@@ -35,6 +40,12 @@
         - [ ] Payment
     - [ ] Housing and Accommodation
 - [ ] Committees 
+- [ ] Others
+    - [ ] 404
+    - [ ] In construction
 
 ### Others
 - [ ] Ask someone to proofread
+
+## To be confirmed
+- footer: social media link

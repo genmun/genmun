@@ -1,0 +1,8 @@
+@font-face
+{
+    font-family: 'Horizon-PersonalUse';
+  src: url('Horizon-PersonalUse.eot');
+      url('Horizon-PersonalUse.eot?#') format('embedded-opentype'),
+      url('Horizon-PersonalUse.woff') format('woff'),
+      url('Horizon-PersonalUse.ttf') format('truetype');
+}

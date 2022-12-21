@@ -1,0 +1,12 @@
+{{ partial "header.html" . -}}
+
+<header>
+<h1>{{ .Title }}</h1>
+<p class="date">Last Updated: {{ .Date }}</p>
+</header>
+
+<article>
+{{ .Content -}}
+</article>
+
+{{ partial "footer.html" . }}

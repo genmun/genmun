@@ -1,0 +1,29 @@
+<div class="menu-container">
+	<nav>
+		<div class="headerlogo"><a href="#"><img src="/images/logo-simplified.png" alt="genmun logo"></a></div>
+		<!--This takes 5 days to program but I'm glad it's done--> 	
+		<input id="hamburger-toggle" type="checkbox">
+		<label for="hamburger-toggle" class="hamburger">
+			<div class="hamburger-top-bun"></div>
+			<div class="hamburger-meat"></div>
+			<div class="hamburger-bottom-bun"></div>
+		</label>
+		<ul class="navbar mobiledropdownanimation">
+			{{ $currentPage := . }}
+			{{ range .Site.Menus.main }}
+			<li class="navprimary {{ if $currentPage.HasMenuCurrent "main" . }}active{{ end }}">
+				{{ .Name }}
+				{{ if .HasChildren }}
+				<ul class="navsecondarybar dropdownanimation">
+					{{ range .Children }}
+					<li class="navsecondary {{ if $currentPage.IsMenuCurrent "main" . }}active{{ end }}">
+						<a href="{{ .URL }}">{{ .Name }}</a>
+					</li>
+					{{ end }}
+				</ul>
+				{{ end }}
+			</li>
+			{{ end }}
+		</ul>
+	</nav>
+</div>
