@@ -1,0 +1,375 @@
+/*  ###### CSS FOR GMUN WEBSITE ###### */
+/* By: Jack (4K2/2022-23) */
+
+
+/*  ### RESET CSS ### */
+
+/* 	http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+	License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* ### SETTINGS ### */
+
+:root {
+	--font-size: 125%;
+	--font-family-primary: Horizon;
+	--font-family-secondary: Montserrat;
+	--background-color-navigation: #0077B6;
+	--background-color-navigation-selected: #1A759F;
+	--background-color-navigation-secondary: #0096C7;
+	--background-color-navigation-secondary-selected: #2980b9;
+	--color-h1: #023E8A;
+	--navbar-height: 3.5em;
+}
+
+/* ### FONT ### */
+
+@font-face {
+  font-family: "Horizon";
+  src: url("../fonts/horizon.woff2") format("woff2");
+}
+
+@import url("../fonts/Montserrat/Montserrat.css");
+
+/* ### MAIN ### */
+
+
+html {
+	font-size: var(--font-size);
+	font-family: var(--font-family-secondary);
+}
+
+main {
+	/* fit footer at the bottom of screen */
+    min-height: calc(100vh - 2*var(--navbar-height));
+	padding: 1em;
+	box-sizing: border-box;
+	max-width: 45em;
+	margin: auto;
+}
+
+h1,h2,h3,h4,h5,h6 {
+	text-align: center ;
+	font-family: var(--font-family-primary);
+	margin: 0.5em 0;
+}
+
+header {
+	text-align: center ;
+	margin-bottom: 1em;
+}
+header h1 {
+	font-size: 2em;
+	color: var(--color-h1);
+		text-transform: uppercase;
+}
+
+.date {
+	margin-top: 0.8em;
+	font-size: 0.8em;
+	font-weight: 300;
+	font-style: italic;
+	color: #a9a9a9;
+}
+
+
+/* ### HEADER ### */
+
+
+.menu-container  {
+	background-color: var(--background-color-navigation);
+	font-size: 1rem;
+}
+
+.menu-container .headerlogo img {
+    height: 2.5em;
+	padding-top: 0.5em;
+    margin-left: 17.5em;
+	margin-right: auto;
+}
+
+.menu-container img:hover {
+	/* https://codepen.io/jumarjuaton/full/mdJYWYq */
+	filter: invert(45%) sepia(22%) saturate(954%) hue-rotate(150deg) brightness(91%) contrast(88%);
+}
+
+
+.menu-container nav {
+	display: flex;
+	justify-content: center;
+	font-size: 1em;
+	text-transform: uppercase;
+	height: var(--navbar-height);
+}
+.menu-container .navbar {
+	display: flex;
+	justify-content: center;
+	font-family: var(--font-family-primary);
+	margin-right: 12em;
+	margin-left: 5em;
+	background-color: var(--background-color-navigation);
+}
+
+.menu-container .navprimary {
+	padding: 1em 2em;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #FFF;
+	perspective: 50em;
+	z-index: 19;
+	white-space: nowrap;
+}
+.menu-container .navprimary:hover {
+	background-color: var(--background-color-navigation-selected);
+	cursor: pointer;
+}
+.menu-container .navprimary:hover .navsecondarybar {
+	display: block;
+}
+
+.menu-container .navsecondarybar {
+	position: absolute;
+	top: 100%;
+	left: 0;
+	width: 100%;
+	min-width: 14em;
+	perspective: 50em;
+	z-index: -1;
+	padding: 0 0 0 0;
+	display: none;
+}
+
+.menu-container .navsecondarybar li {
+	color: #fff;
+	background-color: var(--background-color-navigation-secondary);
+	padding: 0.5em 1em;
+	font-size: 0.9em;
+	font-family: var(--font-family-secondary);
+	font-weight: 500;
+	line-height: 2em;
+	white-space: normal;
+}
+
+.menu-container .navsecondarybar li:hover {
+	background-color: var(--background-color-navigation-secondary-selected);
+}
+
+.menu-container a {
+	text-decoration: none;
+	color: #FFF;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 60px;
+}
+
+/* # HAMBURGER # */
+
+.hamburger {
+	position: absolute;
+	top: 0.5em;
+	right: 1.7em;
+	margin: 0 0 0 0;
+	width: 2em;
+	z-index: 5;
+}
+
+.hamburger div {
+	position: relative;
+	width: 3em;
+	height: 7px;
+	border-radius: 3px;
+	background-color: #FFF;
+	margin-top: 8px;
+	transition: all 0.3s ease-in-out;
+}
+
+.hamburger, #hamburger-toggle {
+	display: none;
+}
+
+#hamburger-toggle:checked + .hamburger .hamburger-top-bun {
+	transform: rotate(-45deg);
+	margin-top: 25px;
+}
+#hamburger-toggle:checked + .hamburger .hamburger-bottom-bun {
+	opacity: 0;
+	transform: rotate(45deg);
+}
+#hamburger-toggle:checked + .hamburger .hamburger-meat {
+	transform: rotate(45deg);
+	margin-top: -7px;
+}
+
+/* # MOBILE HEADER # */
+
+@media all and (max-width : 1000px) {
+
+	.menu-container .navbar {
+		position: absolute;
+		display: none;
+		width: 100%;
+		margin: var(--navbar-height) 0;
+	}
+	
+	.menu-container .headerlogo img {
+		margin-left: 0;
+	}
+
+	.menu-container .navprimary {
+		text-align: center;
+		display: block;
+		padding: 0 0 0 0;
+		line-height: 3em;
+	}
+
+	.menu-container .navsecondarybar  {
+		position: relative;
+
+	}
+	
+	.hamburger {
+		display: block
+	}
+	
+	#hamburger-toggle:checked ~ .navbar {
+		display: block;
+	}
+	
+	.mobiledropdownanimation {
+		animation: rotateMenu 400ms ease-in-out forwards;
+		transform-origin: top center;
+	}
+
+}
+
+/* # DROPDOWN ANIMATION # */
+
+
+
+.dropdownanimation {
+	animation: rotateMenu 400ms ease-in-out forwards;
+	transform-origin: top center;
+}
+
+@-moz-keyframes rotateMenu {
+	0% {
+		transform: rotateX(-90deg);
+	}
+	
+	70% {
+		transform: rotateX(20deg);
+	}
+	
+	100% {
+		transform: rotateX(0deg);
+	}
+}
+
+@-webkit-keyframes rotateMenu {
+	0% {
+		transform: rotateX(-90deg);
+	}
+	
+	70% {
+		transform: rotateX(20deg);
+	}
+	
+	100% {
+		transform: rotateX(0deg);
+	}
+}
+
+@-o-keyframes rotateMenu {
+	0% {
+		transform: rotateX(-90deg);
+	}
+	
+	70% {
+		transform: rotateX(20deg);
+	}
+	
+	100% {
+		transform: rotateX(0deg);
+	}
+}
+
+@keyframes rotateMenu {
+	0% {
+		transform: rotateX(-90deg);
+	}
+	70% {
+		transform: rotateX(20deg);
+	}
+	100% {
+		transform: rotateX(0deg);
+	}
+}
+
+/* ### FOOTER ### */
+
+.socialmediacontainer {
+	display: flex;
+	justify-content: center;
+	font-family: var(--font-family-primary);
+	background-color: var(--background-color-navigation);
+	height: var(--navbar-height);
+
+}
+.socialmediacontainer img {
+	padding: 0.75em 0.5em 0 0.5em;
+	height: 2em;
+	width: 2em;
+}
