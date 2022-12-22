@@ -9,6 +9,11 @@ menu:
     - identifier: conference
       name: Conference
       weight: 2
+    - identifier: schedule
+      name: Schedule
+      url: /schedule
+      parent: conference
+      weight: 1
     - identifier: registration
       name: Registration
       weight: 3
@@ -20,3 +25,7 @@ menu:
       url: /contact
       parent: about
       weight: 1
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
