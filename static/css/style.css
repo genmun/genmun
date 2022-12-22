@@ -89,14 +89,17 @@ main {
     min-height: calc(100vh - 2*var(--navbar-height));
 	padding: 1em;
 	box-sizing: border-box;
-	max-width: 45em;
+	max-width: 40em;
 	margin: auto;
 }
 
 h1,h2,h3,h4,h5,h6 {
 	text-align: center ;
 	font-family: var(--font-family-primary);
-	margin: 0.5em 0;
+}
+
+h2,h3,h4,h5,h6 {
+	margin: 2em 0;
 }
 
 header {
@@ -115,6 +118,43 @@ header h1 {
 	font-weight: 300;
 	font-style: italic;
 	color: #a9a9a9;
+}
+
+.headline-hash {
+	opacity: 0;
+	text-decoration: none;
+	font-weight: 300;
+	color: #5E60CE;
+}
+
+ul, ol {
+  	margin: 0.2em 1em;
+}
+
+ul li {
+	list-style-type: "- ";
+  	margin: 0.2em 1em;
+	padding-left: 0.6em;
+}
+
+ol li {
+  list-style-type: decimal;
+}
+
+p {
+	margin: 0.3em 0;
+}
+
+strong {
+	font-weight: bold;
+}
+
+em {
+	font-style: italic;
+}
+
+a {
+	text-decoration: none;
 }
 
 
@@ -372,4 +412,147 @@ header h1 {
 	padding: 0.75em 0.5em 0 0.5em;
 	height: 2em;
 	width: 2em;
+}
+
+/* ### SCHEDULE ### */
+
+#conferenceschedule {
+	display: flex;
+	justify-content: center;
+	width: 100%;
+}
+
+
+.schedule {
+	margin: 1em;
+}
+.schedule thead {display: none;}
+
+.schedule th, td {
+	border: 1px solid;
+	padding: 0.5em;
+} 
+
+.schedule tr:nth-child(even) {
+	background-color: #FFF;
+}
+
+.schedule td:nth-of-type(1) {
+	text-align: center;
+}
+
+.schedule td:nth-of-type(2) {
+	font-weight: 300;
+}
+
+.schedule tr {
+	min-width: 10em;
+}
+.schedule td {
+	min-width: 10em;
+}
+
+.schedule1 tr:nth-child(odd) {
+	background-color: #B5E48C;
+}
+.schedule2 tr:nth-child(odd) {
+	background-color: #ADE8F4;
+}
+.schedule3 tr:nth-child(odd) {
+	background-color: #72EFDD;
+}
+.schedule h2 {
+	font-size: 1.2em;
+	margin: 0.5em 0;
+}
+.schedule h3 {
+	font-size: 0.9em;
+	margin: 0.5em 0;
+}
+.schedule1 h2 {
+	color: #52B69A;
+}
+.schedule1 h3 {
+	color: #76C893;
+}
+
+.schedule2 h2 {
+	color: #0096C7;
+}
+.schedule2 h3 {
+	color: #00B4D8;
+}
+.schedule3 h2 {
+	color: #34A0A4;
+}
+.schedule3 h3 {
+	color: #52B69A;
+}
+
+#schedule-is-subject-to-change {
+	font-family: var(--font-family-secondary);
+	font-size: 0.8em;
+	font-weight: 300;
+	font-style: italic;
+}
+
+@media (max-width: 1000px) {
+	#conferenceschedule {
+		flex-direction: column;
+		align-items: center; 
+	}
+	.schedule tr {
+		min-width: 0;
+	}
+	.schedule td {
+		min-width: 0;
+	}
+} 
+
+/* ### FAQ ### */
+
+.faqcontainer h3 {
+	font-family: var(--font-family-secondary);
+	font-size: 1.2em;
+	font-weight: bold;
+	text-align: left;
+
+}
+
+.faqcontainer h2 {
+	font-size: 1.3em;
+	color: #0077B6;
+	padding: 1em 0;
+	margin: 1em 0;
+	text-align: left;
+	border-bottom: 0.4em solid;
+}
+
+.faqcontainer {
+	display: flex;
+	flex-direction: column;
+	font-weight: 300;
+	text-align: left;
+}
+
+.faqcontainer hr {
+	background-color: #0096C7;
+	height: 0.05em;
+	margin: 1em 0;
+}
+
+.faqcontainer #table-of-contents {
+	color: #7400B8;
+	text-align: center;
+}
+
+.faqcontainer #registration {
+	color: #52B69A;
+}
+.faqcontainer .toc a {
+	font-weight: 400;
+	color: #5390D9;
+}
+.faqcontainer .headline-hash:hover {
+	opacity: 1;
 }

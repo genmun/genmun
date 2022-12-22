@@ -30,16 +30,11 @@
     - [ ] Introduction to Klang Valley/Kuala Lumpur
     - [ ] Contact Us
 - [ ] Conference Information
-    - [ ] Conference Schedule
-    - [ ] FAQ
-        - [ ] Food
+    - [x] Schedule **(2022-12-22)**
+    - [x] FAQ **(2022-12-22)**
     - [ ] Guest Speaker - unannounced page
-- [ ] Registration
-    - [ ] Overview
-        - [ ] Link to registration
-        - [ ] Payment
-    - [ ] Housing and Accommodation
-- [ ] Committees 
+- [x] Registration **(2022-12-22)**
+- [ ] Councils 
 - [ ] Others
     - [ ] 404
     - [ ] In construction

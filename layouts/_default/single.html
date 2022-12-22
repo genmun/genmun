@@ -1,12 +1,12 @@
-{{ partial "header.html" . -}}
+{{ partial "header.html" . }}
 
 <header>
 <h1>{{ .Title }}</h1>
-<p class="date">Last Updated: {{ .Date }}</p>
+<p class="date">Last Updated: {{ .Date | time.Format "2 Jan 2006" }}</p>
 </header>
 
 <article>
-{{ .Content -}}
+{{ partial "headline-hash.html" .Content }}
 </article>
 
 {{ partial "footer.html" . }}
