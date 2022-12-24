@@ -1,6 +1,6 @@
 <div class="menu-container">
 	<nav>
-		<div class="headerlogo"><a href="#"><img src="/images/logo-simplified.png" alt="genmun logo"></a></div>
+		<div class="headerlogo"><a href="#"><img src="/images/logo-simplified.webp" alt="genmun logo"></a></div>
 		<!--This takes 5 days to program but I'm glad it's done--> 	
 		<input id="hamburger-toggle" type="checkbox">
 		<label for="hamburger-toggle" class="hamburger">
@@ -12,7 +12,11 @@
 			{{ $currentPage := . }}
 			{{ range .Site.Menus.main }}
 			<li class="navprimary {{ if $currentPage.HasMenuCurrent "main" . }}active{{ end }}">
-				{{ .Name }}
+				{{ if .HasChildren }}
+					{{ .Name }}
+				{{ else }}
+					<a href="{{ .URL }}">{{ .Name }}</a>
+				{{ end }}
 				{{ if .HasChildren }}
 				<ul class="navsecondarybar dropdownanimation">
 					{{ range .Children }}

@@ -6,7 +6,7 @@ menu:
     - identifier: about
       name: About
       weight: 1
-    - identifier: about-us
+    - identifier: about
       name: About Us
       url: /about
       parent: about
@@ -45,7 +45,6 @@ menu:
       weight: 3
     - identifier: councils
       name: Councils
-      url: /councils
       weight: 4
 markup:
   goldmark:
