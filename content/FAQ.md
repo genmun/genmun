@@ -23,11 +23,7 @@ Yes. However just recently, the PERMATA Model United Nations Club rebranded into
 
 ### What is Model United Nations (MUN)? 
 
-A Model United Nations (MUN) conference is an academic simulation of the meetings and discussions held by the councils at the United Nations (UN). In an MUN, students ranging from high school to tertiary education, are exposed to diplomacy skills, international relations, real-world issues, and the UN, as a whole.
-
-Students participating in an MUN conference take up the role of a nation's delegate to the UN where they partake in fruitful discussions about real-world issues. After days of debates and discussions, delegates will collectively submit a resolution where they propose real solutions for real-world issues.
-
-MUN serves as a platform for students to practice their skills in research, public speaking, diplomatic debating, as well as critical thinking, teamwork, and leadership. The real formatting of the UN is used to develop the students' speaking skills on a globular scale.
+The Model United Nations, usually known as MUN, is a simulation of actual United Nations conferences. Participants are known as delegates, and are each assigned a country to represent as well as a council or committee to participate in. Throughout the conference period, delegates will have to discuss a given topic and reach a resolution with the rest of their council members by the end. 
 
 ---
 

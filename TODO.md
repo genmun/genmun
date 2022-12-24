@@ -8,8 +8,8 @@
 - [ ] SEO
 
 ### Desigining
-- [ ] CSS
-    - [ ] Color Scheme (google)
+- [x] CSS
+    - [x] Color Scheme **(2022-12-22)**
     - [x] Font **(2022-12-21)**
 - [x] Header **(2022-12-19)**
     - [x] Navigation bar **(2022-12-15)**
@@ -21,26 +21,16 @@
 
 ### Content
 - [ ] Home
-    - [ ] Awards
-- [ ] About
-    - [ ] About Us
-        - [ ] Our History
-    - [ ] Meet the Team
-    - [ ] Letter from the Secretary-General
-    - [ ] Introduction to Klang Valley/Kuala Lumpur
-    - [ ] Contact Us
-- [ ] Conference Information
+- [x] About
+    - [x] About Us **(2022-12-24)**
+    - [x] Meet the Team **(2022-12-24)**
+    - [x] Venue **(2022-12-23)**
+    - [x] Contact Us **(2022-12-23)**
+- [x] Conference Information
     - [x] Schedule **(2022-12-22)**
     - [x] FAQ **(2022-12-22)**
-    - [ ] Guest Speaker - unannounced page
 - [x] Registration **(2022-12-22)**
 - [ ] Councils 
 - [ ] Others
     - [ ] 404
     - [ ] In construction
-
-### Others
-- [ ] Ask someone to proofread
-
-## To be confirmed
-- footer: social media link
