@@ -1,3 +1,5 @@
+@import url("Montserrat.css");
+
 /*  ###### CSS FOR GMUN WEBSITE ###### */
 /* By: Jack (4K2/2022-23) */
 
@@ -74,7 +76,8 @@ table {
   src: url("../fonts/horizon.woff2") format("woff2");
 }
 
-@import url("../fonts/Montserrat/Montserrat.css");
+
+
 
 /* ### MAIN ### */
 
