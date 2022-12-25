@@ -31,11 +31,10 @@ GENIUS Model United Nations 2023 (GMUN 2023) is a Model United Nations Conferenc
 
 ## About Our School
 
-![geniuspintar](/images/kgp1.webp)
+![geniuspintar](/images/kgp2.webp)
 
-Kolej GENIUS@Pintar Negara UKM is a gifted center that provides education services for gifted and talented Malaysian students aged 12 – 17 in Malaysia. It was established by University Kebangsaan Malaysia to support the Malaysian Gifted and Talented Program. It offers middle and high school education to the Malaysian gifted and talented students. The students have won many accolades and put Malaysia on the world map of academic excellence.
+Kolej GENIUS@Pintar Negara UKM is a gifted center that provides education services for middle and high school education to the Malaysian gifted and talented students. It provides challenging activities and holistic education to harness the potential of these students to the fullest. The students have won many accolades and put Malaysia on the world map of academic excellence. Over the past years, the school has represented Malaysia in many competitions such as International Mathematical Olympiad, F1 in Schools World Finals, the World Scholar's Cup and World Robotic Olympiad.
 
-ASASIpintar UKM is a pre-university programme under the purview of Pusat GENIUS@Pintar Negara, Universiti Kebangsaan Malaysia (UKM). The programme is designed for Sijil Pelajaran Malaysia (Malaysia's national exam) leavers with strong academic credentials, high intellectual potential, and talent. Graduates of the ASASIpintar UKM will pursue Bachelor’s degrees in a variety of fields at Malaysian public universities, based on their grades and faculty interviews. 
-
+ASASIpintar UKM is a pre-university programme under the purview of Pusat GENIUS@Pintar Negara, Universiti Kebangsaan Malaysia (UKM). The programme is designed for Sijil Pelajaran Malaysia (Malaysia's national exam) leavers with strong academic credentials, high intellectual potential, and talent. 
 
 </div>
