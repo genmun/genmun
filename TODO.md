@@ -1,5 +1,14 @@
 # TODO
 
+## Patches before release
+
+- [ ] Social media link
+- [ ] Email
+- [ ] Registration page
+- [ ] fix team page for android
+- [ ] opening remark secgen
+- [ ] team page photoshoot
+
 ## Website
 
 ### General
@@ -19,8 +28,7 @@
 
 ## Content
 
-### Content
-- [ ] Home
+- [x] Home **(2022-12-25)**
 - [x] About
     - [x] About Us **(2022-12-24)**
     - [x] Meet the Team **(2022-12-24)**
@@ -30,7 +38,7 @@
     - [x] Schedule **(2022-12-22)**
     - [x] FAQ **(2022-12-22)**
 - [x] Registration **(2022-12-22)**
-- [ ] Councils 
-- [ ] Others
-    - [ ] 404
+- [x] Councils **(2022-12-25)**
+- [x] Others
+    - [ ] 404 **(2022-12-25)**
     - [ ] In construction
