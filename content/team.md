@@ -7,12 +7,12 @@ date: 2022-12-24T11:40:12+08:00
 
 - ![](/images/face.webp)
     - Secretary General
-    - Kolej GENIUS@pintar
+    - GMUN 2023
     - Muhammad Syarif bin Mohd Shariful Azwan
 
 - ![](/images/face.webp)
     - Deputy Secretary General
-    - Kolej GENIUS@pintar
+    - GMUN 2023
     - Wan Muhammad Daniel bin Wan Junaidi
 
 </div>
@@ -21,22 +21,22 @@ date: 2022-12-24T11:40:12+08:00
 
 - ![](/images/face.webp)
     - Secretary
-    - Kolej GENIUS@pintar
+    - GMUN 2023
     - Aqil Ar-Rayyan bin Muhammad Haniff
 
 - ![](/images/face.webp)
     - Deputy Secretary
-    - Kolej GENIUS@pintar
+    - GMUN 2023
     - Amelia Siow
 
 - ![](/images/face.webp)
     - Treasurer
-    - Kolej GENIUS@pintar
+    - GMUN 2023
     - Muhammad Anas bin Zamri
 
 - ![](/images/face.webp)
     - Deputy Treasurer
-    - Kolej GENIUS@pintar
+    - GMUN 2023
     - Choong Cheng Ken
 
 </div>
@@ -49,7 +49,7 @@ date: 2022-12-24T11:40:12+08:00
 
 - ![](/images/face.webp)
     - Head of Committee
-    - Kolej GENIUS@pintar
+    - Accommodation
     - Nur Qistina Ardinie binti Muhammad Shahrir
 
 </div>
@@ -77,7 +77,7 @@ Committee members:
 
 - ![](/images/face.webp)
     - Head of Committee
-    - Kolej GENIUS@pintar
+    - Awards
     - Xinicky Madel
 
 </div>
@@ -103,12 +103,12 @@ Committee members:
 
 - ![](/images/face.webp)
     - Head of Committee
-    - Kolej GENIUS@pintar
+    - Food
     - Aina Batrisyia binti Mohd Rafee 
 
 - ![](/images/face.webp)
     - Head of Committee
-    - Kolej GENIUS@pintar
+    - Food
     - Sarah Diyanah binti Yusnizam
 
 </div>
@@ -133,17 +133,17 @@ Committee members:
 
 - ![](/images/face.webp)
     - Head of Committee
-    - Kolej GENIUS@pintar
+    - Multimedia
     - Emir Hakim bin Suhaimi
 
 - ![](/images/face.webp)
     - Head of Committee
-    - Kolej GENIUS@pintar
+    - Multimedia
     - Jack Lim Wei Jye
 
 - ![](/images/face.webp)
     - Head of Committee
-    - Kolej GENIUS@pintar
+    - Multimedia
     - Qistina Aisyah binti Abdul Razak
 
 </div>
@@ -177,7 +177,7 @@ Committee members:
 
 - ![](/images/face.webp)
     - Head of Committee
-    - Kolej GENIUS@pintar
+    - Performance
     - Nur Emysha Rina binti Abd Aziz
 
 </div>
@@ -198,12 +198,12 @@ Committee members:
 
 - ![](/images/face.webp)
     - Head of Committee
-    - Kolej GENIUS@pintar
+    - Protocal and Technical
     - Ling Chin Wei
 
 - ![](/images/face.webp)
     - Head of Committee
-    - Kolej GENIUS@pintar
+    - Protocal and Technical
     - Nur Alya Maisarah binti Erno Zan
 
 </div>
@@ -226,12 +226,12 @@ Committee members:
 
 - ![](/images/face.webp)
     - Head of Committee
-    - Kolej GENIUS@pintar
+    - Registration
     - Amelia Adam Cheah
 
 - ![](/images/face.webp)
     - Head of Committee
-    - Kolej GENIUS@pintar
+    - Registration
     - Haziqah Natrah binti Wahab
 
 </div>
@@ -260,12 +260,12 @@ Committee members:
 
 - ![](/images/face.webp)
     - Head of Committee
-    - Kolej GENIUS@pintar
+    - Social Night
     - Angelyn Liaw Yee Ern
 
 - ![](/images/face.webp)
     - Head of Committee
-    - Kolej GENIUS@pintar
+    - Social Night
     - Nurul Iman binti Tajulmar
 
 </div>
@@ -301,12 +301,12 @@ Committee members:
 
 - ![](/images/face.webp)
     - Head of Committee
-    - Kolej GENIUS@pintar
+    - Volunteering
     - Adam Haidhar bin Hassan
 
 - ![](/images/face.webp)
     - Head of Committee
-    - Kolej GENIUS@pintar
+    - Volunteering
     - Muhammad Farihin bin Ruslan
 
 </div>

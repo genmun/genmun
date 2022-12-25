@@ -2,12 +2,32 @@
 
 <footer>
     <div class="socialmediacontainer">
-		<a href="https://www.facebook.com/"><img src="/images/facebook.svg" alt="facebook"></a>
-		<a href="https://www.twitter.com/"><img src="/images/twitter.svg" alt="twitter"></a>
-		<a href="https://www.instagram.com/"><img src="/images/instagram.svg" alt="instagram"></a>
-		<a href="mailto:gmun@gmun.my"><img src="/images/mail.svg" alt="mail"></a>
+		<a href="https://www.facebook.com/"><img src="/images/footer/facebook.svg" alt="facebook"></a>
+		<a href="https://www.twitter.com/"><img src="/images/footer/twitter.svg" alt="twitter"></a>
+		<a href="https://www.instagram.com/"><img src="/images/footer/instagram.svg" alt="instagram"></a>
+		<a href="mailto:info@gmun.my"><img src="/images/footer/mail.svg" alt="mail"></a>
 	</div>
 </footer>
 
 </body>
+<script>
+
+// When the user scrolls the page, execute myFunction
+window.onscroll = function() {myFunction()};
+
+// Get the header
+var header = document.getElementsByClassName("menu-container")[0];
+
+// Get the offset position of the navbar
+var sticky = header.offsetTop;
+
+// Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+} 
+</script>
 </html>
