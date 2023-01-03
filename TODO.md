@@ -3,11 +3,12 @@
 ## Patches before release
 
 - [ ] Social media link
-- [ ] Email
-- [ ] Registration page
+- [x] Email
+- [x] Registration page (confirmed current one is ok)
 - [ ] fix team page for android
 - [ ] opening remark secgen
 - [ ] team page photoshoot
+- [ ] venue page link to attractions
 
 ## Website
 
@@ -40,5 +41,4 @@
 - [x] Registration **(2022-12-22)**
 - [x] Councils **(2022-12-25)**
 - [x] Others
-    - [ ] 404 **(2022-12-25)**
-    - [ ] In construction
+    - [x] 404 **(2022-12-25)**
