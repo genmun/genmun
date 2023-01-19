@@ -1,6 +1,6 @@
 ---
 title: "Councils"
-date: 2022-12-25T12:50:49+08:00
+date: 2023-01-18
 ---
 
 **Note**: The topics for GMUN 2023 have not been announced yet. Once updated, all topics, chairs and countries will be available on this page.

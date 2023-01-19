@@ -1,6 +1,6 @@
 ---
 title: "About Us"
-date: 2022-12-23T20:16:59+08:00
+date: 2023-01-18
 ---
 
 <div class="about1">
@@ -9,11 +9,7 @@ date: 2022-12-23T20:16:59+08:00
 
 ![mun](/images/permun2.webp)
 
-The Model United Nations, usually known as MUN, is an academic simulation of the meetings and discussions held by the councils at the United Nations (UN). In an MUN, students ranging from high school to tertiary education, are exposed to diplomacy skills, international relations, real-world issues, and the UN, as a whole.
-
-Students participating in an MUN conference take up the role of a nation's delegate to the UN where they partake in fruitful discussions about real-world issues. After days of debates and discussions, delegates will collectively submit a resolution where they propose real solutions for real-world issues.
-
-MUN serves as a platform for students to practice their skills in research, public speaking, diplomatic debating, as well as critical thinking, teamwork, and leadership. The real formatting of the UN is used to develop the students' speaking skills on a globular scale.
+The Model United Nations, usually known as MUN, is a simulation of actual United Nations conferences. Participants are known as delegates, and are each assigned a country to represent as well as a council or committee to participate in. Throughout the conference period, delegates will have to discuss a given topic and reach a resolution with the rest of their council members by the end. 
 
 </div>
 
@@ -28,13 +24,5 @@ GENIUS Model United Nations 2023 (GMUN 2023) is a Model United Nations Conferenc
 </div>
 
 <div class="about3">
-
-## About Our School
-
-![geniuspintar](/images/kgp2.webp)
-
-Kolej GENIUS@Pintar Negara UKM is a gifted center that provides education services for middle and high school education to the Malaysian gifted and talented students. It provides challenging activities and holistic education to harness the potential of these students to the fullest. The students have won many accolades and put Malaysia on the world map of academic excellence. Over the past years, the school has represented Malaysia in many competitions such as International Mathematical Olympiad, F1 in Schools World Finals, the World Scholar's Cup and World Robotic Olympiad.
-
-ASASIpintar UKM is a pre-university programme under the purview of Pusat GENIUS@Pintar Negara, Universiti Kebangsaan Malaysia (UKM). The programme is designed for Sijil Pelajaran Malaysia (Malaysia's national exam) leavers with strong academic credentials, high intellectual potential, and talent. 
 
 </div>
