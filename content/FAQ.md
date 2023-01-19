@@ -1,6 +1,6 @@
 ---
 title: "Frequently Asked Questions"
-date: 2022-12-22T16:33:54+08:00
+date: 2023-01-18
 ---
 
 <div class="faqcontainer">
@@ -61,7 +61,7 @@ GMUN is a fully English event. Everyone is encouraged to speak English, as peopl
 
 ### What is the theme of GMUN 2023?
 
-To be announced
+This year’s GENMUN theme is **Principled STEM Advancements**. As such, delegates can expect to take part in discussions centered around this central theme and its various branches, from various perspectives as assigned by council.
 
 ---
 
@@ -89,7 +89,15 @@ Students who are currently enrolled in any educational institution of any level 
 
 ### Is accommodation provided?
 
-Official acommodation is provided for those who want it. Please check out our [registration page](/registration) for more details.
+There are a few . Please check out our ["plan your trip" page](/plan) for some recommendations.
+
+---
+
+## Others
+
+### Have more questions?
+
+If you still have more questions, feel free to [reach out](/contact) to us. We will be happy to answer your questions.
 
 ---
 
