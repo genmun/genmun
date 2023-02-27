@@ -3,16 +3,19 @@ title: "Councils"
 date: 2023-01-18
 ---
 
+
 **Note**: The topics for GMUN 2023 have not been announced yet. Once updated, all topics, chairs and countries will be available on this page.
+
+GMUN 2023 will be using **HMUN** Rules of Procedure. Please check out the [materials](/materials) page for more details.
 
 ## Beginner Councils
 
 <div class="councils">
 
-- ![unep](/images/councils/unep.webp)
+- ![unep](/images/councils/unep.svg)
     - UNEP
     - United Nations Environment Programme
-- ![who](/images/councils/who.webp)
+- ![who](/images/councils/who.svg)
     - WHO
     - World Health Organization
 - ![disec](/images/councils/disec.webp)
@@ -32,7 +35,7 @@ date: 2023-01-18
     - ECOSOC
     - Economic and Social Council
 
-- ![undp](/images/councils/undp.webp)
+- ![undp](/images/councils/undp.svg)
     - UNDP
     - United Nations Development Programme
 
@@ -50,7 +53,7 @@ date: 2023-01-18
     - Crisis
     - Crisis Council
 
-- ![wto](/images/councils/wto.webp)
+- ![wto](/images/councils/wto.svg)
     - WTO
     - World Trade Organization
 

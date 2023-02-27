@@ -8,6 +8,11 @@ date: 2023-02-27
 - ![](/images/face.webp)
     - Secretary General
     - Muhammad Syarif bin Mohd Shariful Azwan
+
+</div>
+
+<div class="team hoc">
+
 - ![](/images/face.webp)
     - Deputy Secretary General
     - Wan Muhammad Daniel bin Wan Junaidi
