@@ -1,6 +1,7 @@
 baseURL: "https://gmun.my/"
 languageCode: en-us
 title: GMUN
+timeZone: Local
 menu:
   main:
     - identifier: about
