@@ -1,8 +1,13 @@
 ---
 title: "Venue"
-date: 2022-12-23T12:15:10+08:00
+date: 2023-02-27
 ---
 
+## About Our Center
+
+![auditorium](/images/audi.webp)
+
+As part of the GENIUS@pintar education programme, the school provides gifted Malaysian students with a focused and holistic learning environment. It is no surprise that The PERMATApintar　（now known as GENIUS@pintar) Auditorium and Sports Park, designed by GDP architects, have won multiple awards such as 2015 PAM Awards, the premier award for architecture in Malaysia. The park includes an auditorium, running track, football field, Olympic-sized swimming pool and spectator facilities. Dr Hossein Rezai, Web Structures’ Group Director, says: “The design concept involved harnessing and using the cascading topography of the site and its natural valleys. The sports park was to be an active landscape."
 
 ## How to get here
 
