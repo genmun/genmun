@@ -40,6 +40,11 @@ menu:
       url: /schedule
       parent: conference
       weight: 2
+    - identifier: materials
+      name: Materials
+      url: /materials
+      parent: conference
+      weight: 3
     - identifier: registration
       name: Registration
       url: /registration
