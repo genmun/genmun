@@ -178,6 +178,11 @@ a {
 	text-decoration: none;
 }
 
+a {
+	text-decoration: none;
+    color: inherit;
+}
+
 
 /* ### HEADER ### */
 
@@ -835,12 +840,12 @@ hr {
 
 .councils img  {
 	width: 100%;
-	object-fit: cover;
-	height: 10em;
+	object-fit: contain;
+	height: 8em;
 	border-bottom: 0.05em solid;
 }
 
-.councils a.hover {
+.councils a:hover {
     text-decoration: underline;
 }
 
