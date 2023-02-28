@@ -61,7 +61,7 @@ GMUN is a fully English event. Everyone is encouraged to speak English, as peopl
 
 ### What is the theme of GMUN 2023?
 
-This year’s GENMUN theme is **Principled STEM Advancements**. As such, delegates can expect to take part in discussions centered around this central theme and its various branches, from various perspectives as assigned by council.
+This year’s GMUN theme is **Principled STEM Advancements**. As such, delegates can expect to take part in discussions centered around this central theme and its various branches, from various perspectives as assigned by council.
 
 ---
 

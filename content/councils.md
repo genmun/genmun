@@ -12,10 +12,10 @@ GMUN 2023 will be using **HMUN** Rules of Procedure. Please check out the [mater
 
 <div class="councils">
 
-- ![unep](/images/councils/unep.svg)
+- ![unep](/images/councils/unep.webp)
     - UNEP
     - United Nations Environment Programme
-- ![who](/images/councils/who.svg)
+- ![who](/images/councils/who.webp)
     - WHO
     - World Health Organization
 - ![disec](/images/councils/disec.webp)
@@ -35,7 +35,7 @@ GMUN 2023 will be using **HMUN** Rules of Procedure. Please check out the [mater
     - ECOSOC
     - Economic and Social Council
 
-- ![undp](/images/councils/undp.svg)
+- ![undp](/images/councils/undp.webp)
     - UNDP
     - United Nations Development Programme
 
@@ -53,7 +53,7 @@ GMUN 2023 will be using **HMUN** Rules of Procedure. Please check out the [mater
     - Crisis
     - Crisis Council
 
-- ![wto](/images/councils/wto.svg)
+- ![wto](/images/councils/wto.webp)
     - WTO
     - World Trade Organization
 
