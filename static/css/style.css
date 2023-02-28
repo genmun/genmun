@@ -61,7 +61,7 @@ table {
 	--font-size: 135%;
 	--font-family-primary: Horizon;
 	--font-family-secondary: ITC Eras Medium;
-	--background-color-navigation: #0077B6;
+	--background-color-navigation: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(0,119,182,1) 35%, rgba(0,212,255,1) 100%);
 	--background-color-navigation-selected: #1A759F;
 	--background-color-navigation-secondary: #0096C7;
 	--background-color-navigation-secondary-selected: #2980b9;
@@ -88,9 +88,11 @@ table {
 html {
 	font-size: var(--font-size);
 	font-family: var(--font-family-secondary);
-		font-weight: normal;
+	font-weight: normal;
 	line-height: 1.3em;
-  text-align: justify;
+    text-align: justify;
+    background: rgb(225,242,251);
+    background: linear-gradient(90deg, rgba(225,242,251,1) 0%, rgba(255,255,255,1) 50%, rgba(225,242,251,1) 100%); 
 }
 
 main {
@@ -100,7 +102,7 @@ main {
 }
 article {
 	box-sizing: border-box;
-	max-width: 40em;
+	max-width: 60em;
 	margin: auto;
 	padding: 1em;
 }
@@ -188,7 +190,7 @@ a {
 
 
 .menu-container  {
-	background-color: var(--background-color-navigation);
+	background: var(--background-color-navigation);
 	font-size: 1rem;
 	z-index: 998;
 }
@@ -460,7 +462,7 @@ a {
 	display: flex;
 	justify-content: center;
 	width: 100%;
-		flex-direction: column;
+		flex-direction: row;
 		align-items: center; 
 }
 
@@ -690,6 +692,9 @@ hr {
 	.cards ul, .councils ul {
 		flex-wrap: wrap;
 	}
+    #conferenceschedule {
+		flex-direction: column;
+    }
 	
 } 
 /* ### ABOUT ### */
@@ -943,6 +948,10 @@ hr {
 	padding: 0;
 	width: 9.5em;
     margin: 0.2em;
+}
+
+.teamhome img {
+    width: cover;
 }
 
 /* ### REGISTRATION ### */
