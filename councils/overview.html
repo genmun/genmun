@@ -1,9 +1,130 @@
 
+<!DOCTYPE html>
+<html style="max-width: 100%; overflow-x: hidden;" lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>GMUN 2023</title>
+
+	<link rel="stylesheet" href="/style.css" type="text/css" media="all" />
+	<link rel="shortcut icon" type="image/x-icon" href="/images/favicon.ico">
+	<link rel="canonical" href="https://gmun.my">
+	<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+	<script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
+  	<script src="https://cdn.tailwindcss.com"></script>
+	<script>
+		tailwind.config = {
+			theme: {
+				fontFamily: {
+					'display': ['Horizon'],
+					'body': ['Montserrat'],
+				},
+				colors: {
+					'blue': {
+						100: '#CAF0F8',
+						200: '#ADE8F4',
+						300: '#90E0EF',
+						400: '#48CAE4',
+						500: '#00B4D8',
+						600: '#0096C7',
+						700: '#0077B6',
+						800: '#023E8A',
+						900: '#03045E'
+					},
+					'cyan': {
+						50: '#D9ED92',
+						100: '#B5E48C',
+						200: '#00D98C',
+						300: '#76C893',
+						400: '#52B69A',
+						500: '#34A0A4',
+						600: '#168AAD',
+						700: '#1A759F',
+						800: '#1E6091',
+						900: '#184E77'
+					},
+					'purple': {
+						50: '#80FFD8',
+						100: '#72EFDD',
+						200: '#64DFDF',
+						300: '#56CFE1',
+						400: '#48BFE3',
+						500: '#4EA8DE',
+						600: '#5390D9',
+						700: '#5E60CE',
+						800: '#6930C3',
+						900: '#7400B8'
+					},
+					transparent: 'transparent',
+      				current: 'currentColor',
+      				black: 'colors.black',
+      				white: 'colors.white'
+				}
+			}
+		}
+	</script>
+</head>
+
+<body class="font-body bg-blue-800 text-white text-base">
+<div class="absolute font-display white dark-mode:text-gray-200 dark-mode:bg-gray-800 z-40 bg-blue-800 md:bg-transparent w-screen px-4">
+	<div x-data="{ open: false }" class="flex flex-col max-w-screen-xl ml-0 mx-auto md:items-center md:justify-between md:flex-row">
+		<div class="p-4 flex flex-row items-center justify-between">
+			<a href="/" ><img class="ml-2 h-12" src="/images/logo-white.webp"></a>
+			<button class="md:hidden rounded-lg focus:outline-none focus:shadow-outline" @click="open = !open">
+			<svg fill="currentColor" viewBox="0 0 20 20" class="w-6 h-6">
+				<path x-show="!open" fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM9 15a1 1 0 011-1h6a1 1 0 110 2h-6a1 1 0 01-1-1z" clip-rule="evenodd"></path>
+				<path x-show="open" fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+			</svg>
+	  		</button>
+		</div>
+
+		<nav :class="{'flex': open, 'hidden': !open}" class="flex-col flex-grow pb-4 md:pb-0 hidden md:flex md:justify-end md:flex-row">
+		<a class="px-4 py-2 mt-2 text-sm font-semibold rounded-lg md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="/">Home</a>
+
+		<div @click.away="open = false" class="relative" x-data="{ open: false }">
+			<button @click="open = !open" class="flex flex-row items-center w-full px-4 py-2 mt-2 text-sm font-semibold text-left bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:focus:bg-gray-600 dark-mode:hover:bg-gray-600 md:w-auto md:inline md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline">
+				<span>About</span>
+				<svg fill="currentColor" viewBox="0 0 20 20" :class="{'rotate-180': open, 'rotate-0': !open}" class="inline w-4 h-4 mt-1 ml-1 transition-transform duration-200 transform md:-mt-1"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+			</button>
+			<div x-show="open" x-transition:enter="transition ease-out duration-100" x-transition:enter-start="transform opacity-0 scale-95" x-transition:enter-end="transform opacity-100 scale-100" x-transition:leave="transition ease-in duration-75" x-transition:leave-start="transform opacity-100 scale-100" x-transition:leave-end="transform opacity-0 scale-95" class="absolute right-0 w-full mt-2 origin-top-right rounded-md shadow-lg md:w-48">
+				<div class="px-2 py-2 bg-blue-600 rounded-md shadow dark-mode:bg-gray-800">
+					<a class="block px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="#">About GMUN</a>
+					<a class="block px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="#">Meet the Team</a>
+				</div>
+			</div>
+		</div>    
+
+		<a class="px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="#">Schedule</a>
+		<a class="px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="/resources">Resources</a>
+		<a class="px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="/councils/overview">Councils</a>
+		<a class="px-8 py-2 mt-2 text-sm font-semibold bg-purple-400 rounded-full md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-blue-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="#">Register Now</a>
+		</nav>
+  	</div>
+</div>
 <main>
 
 <div class="flex flex-col-reverse md:flex-row"  style="min-height: calc(100vh - 10rem)">
 
 
+    <div class="pt-4 md:pt-24 px-6 h-auto bg-cyan-900 md:w-72" id="sidebar">
+        <img class="w-28 mx-auto" src="/images/tba.png">
+        <div class="my-8 font-display">
+		    <div class="my-8"><a class="px-4 py-2 font-semibold bg-transparent rounded-lg hover:text-gray-900 hover:bg-gray-200" href="#">Overview</a></div>
+		    <div class="my-4"><a class="px-4 py-2 font-semibold bg-transparent rounded-lg hover:text-gray-900 hover:bg-gray-200" href="#">UNEP</a></div>
+		    <div class="my-4"><a class="px-4 py-2 font-semibold bg-transparent rounded-lg hover:text-gray-900 hover:bg-gray-200" href="#">UNWOMEN</a></div>
+		    <div class="my-4"><a class="px-4 py-2 font-semibold bg-transparent rounded-lg hover:text-gray-900 hover:bg-gray-200" href="#">UNHRC</a></div>
+		    <div class="my-4"><a class="px-4 py-2 font-semibold bg-transparent rounded-lg hover:text-gray-900 hover:bg-gray-200" href="#">DISEC</a></div>
+		    <div class="my-4"><a class="px-4 py-2 font-semibold bg-transparent rounded-lg hover:text-gray-900 hover:bg-gray-200" href="#">ECOSEC</a></div>
+		    <div class="my-4"><a class="px-4 py-2 font-semibold bg-transparent rounded-lg hover:text-gray-900 hover:bg-gray-200" href="#">UNESCO</a></div>
+		    <div class="my-4"><a class="px-4 py-2 font-semibold bg-transparent rounded-lg hover:text-gray-900 hover:bg-gray-200" href="#">Crisis</a></div>
+		    <div class="my-4"><a class="px-4 py-2 font-semibold bg-transparent rounded-lg hover:text-gray-900 hover:bg-gray-200" href="#">HSC</a></div>
+		    <div class="my-4"><a class="px-4 py-2 font-semibold bg-transparent rounded-lg hover:text-gray-900 hover:bg-gray-200" href="#">UNSC</a></div>
+		    <div class="my-4"><a class="px-4 py-2 font-semibold bg-transparent rounded-lg hover:text-gray-900 hover:bg-gray-200" href="#">Press</a></div>
+        </div>
+    </div>
     <div class="mx-4 md:mx-32 w-full">
         <div class="font-display text-3xl pt-24 text-center">COUNCILS</div>
 
@@ -125,3 +246,22 @@
 </div>
 
 </main>
+
+<footer class="bg-blue-900 px-4 py-4 md:h-40 h-44">
+	<div class="flex flex-col md:flex-row ">
+		<div class="md:visible hidden basis-1/3 md:flex my-auto"><img class="h-12 mx-2" src="/images/logo-white.webp"><div class="my-auto">GENIUS Model United Nations</div></div>
+		<div class="basis-1/3 font-display text-center my-auto py-4 text-xl">16 - 18 June 2023</div>
+		<div class="basis-1/3 text-center">
+			Follow us on:
+   			<div class="flex space-x-4 justify-center my-2">
+				<a href="https://www.instagram.com/gmun_23/"><img class="h-12" src="/images/instagram.svg" alt="instagram"></a>
+				<a href="https://www.twitter.com/"><img class="h-12" src="/images/twitter.svg" alt="twitter"></a>
+				<a href="mailto:genmodelun@gmail.com"><img class="h-12" src="/images/mail.svg" alt="mail"></a>
+			</div>
+		</div>
+	</div>
+	<div class="text-sm text-blue-700 my-2">Copyright @ 2023 GMUN</div>
+</footer>
+
+</body>
+</html>
