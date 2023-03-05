@@ -1,0 +1,373 @@
+
+<!DOCTYPE html>
+<html style="max-width: 100%; overflow-x: hidden;" lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>GMUN 2023</title>
+
+	<link rel="stylesheet" href="/style.css" type="text/css" media="all" />
+	<link rel="shortcut icon" type="image/x-icon" href="/images/favicon.ico">
+	<link rel="canonical" href="https://gmun.my">
+	<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+	<script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
+  	<script src="https://cdn.tailwindcss.com"></script>
+	<script>
+		tailwind.config = {
+			theme: {
+				fontFamily: {
+					'display': ['Horizon'],
+					'body': ['Montserrat'],
+				},
+				colors: {
+					'blue': {
+						100: '#CAF0F8',
+						200: '#ADE8F4',
+						300: '#90E0EF',
+						400: '#48CAE4',
+						500: '#00B4D8',
+						600: '#0096C7',
+						700: '#0077B6',
+						800: '#023E8A',
+						900: '#03045E'
+					},
+					'cyan': {
+						50: '#D9ED92',
+						100: '#B5E48C',
+						200: '#00D98C',
+						300: '#76C893',
+						400: '#52B69A',
+						500: '#34A0A4',
+						600: '#168AAD',
+						700: '#1A759F',
+						800: '#1E6091',
+						900: '#184E77'
+					},
+					'purple': {
+						50: '#80FFD8',
+						100: '#72EFDD',
+						200: '#64DFDF',
+						300: '#56CFE1',
+						400: '#48BFE3',
+						500: '#4EA8DE',
+						600: '#5390D9',
+						700: '#5E60CE',
+						800: '#6930C3',
+						900: '#7400B8'
+					},
+					'transparent': 'transparent',
+      				'current': 'currentColor',
+      				'black': 'colors.black',
+      				'white': 'colors.white'
+				}
+			}
+		}
+	</script>
+</head>
+
+<body class="font-body bg-blue-800 text-white text-base">
+<div class="absolute font-display white dark-mode:text-gray-200 dark-mode:bg-gray-800 z-40 md:bg-transparent w-screen "  >
+	<div x-data="{ open: false }" :class="{'bg-blue-800': open, 'bg-transparent': !open}" class="px-4 flex flex-col max-w-screen-xl ml-0 mx-auto md:items-center md:justify-between md:flex-row">
+		<div class="p-4 flex flex-row items-center justify-between">
+			<a href="/" ><img class="ml-2 h-12" src="/images/logo-white.webp"></a>
+			<button class="md:hidden rounded-lg focus:outline-none focus:shadow-outline" @click="open = !open">
+			<svg fill="currentColor" viewBox="0 0 20 20" class="w-6 h-6">
+				<path x-show="!open" fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM9 15a1 1 0 011-1h6a1 1 0 110 2h-6a1 1 0 01-1-1z" clip-rule="evenodd"></path>
+				<path x-show="open" fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+			</svg>
+	  		</button>
+		</div>
+
+		<nav :class="{'flex': open, 'hidden': !open}" class="flex-col flex-grow pb-4 md:pb-0 hidden md:flex md:justify-end md:flex-row">
+		<a class="px-4 py-2 mt-2 text-sm font-semibold rounded-lg md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="/">Home</a>
+
+		<div @click.away="open = false" class="relative" x-data="{ open: false }">
+			<button @click="open = !open" class="flex flex-row items-center w-full px-4 py-2 mt-2 text-sm font-semibold text-left bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:focus:bg-gray-600 dark-mode:hover:bg-gray-600 md:w-auto md:inline md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline">
+				<span>About</span>
+				<svg fill="currentColor" viewBox="0 0 20 20" :class="{'rotate-180': open, 'rotate-0': !open}" class="inline w-4 h-4 mt-1 ml-1 transition-transform duration-200 transform md:-mt-1"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+			</button>
+			<div x-show="open" x-transition:enter="transition ease-out duration-100" x-transition:enter-start="transform opacity-0 scale-95" x-transition:enter-end="transform opacity-100 scale-100" x-transition:leave="transition ease-in duration-75" x-transition:leave-start="transform opacity-100 scale-100" x-transition:leave-end="transform opacity-0 scale-95" class="absolute right-0 w-full mt-2 origin-top-right rounded-md shadow-lg md:w-60 z-40">
+				<div class="px-2 py-2 bg-blue-600 rounded-md shadow dark-mode:bg-gray-800">
+					<a class="block px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="#">About GMUN</a>
+					<a class="block px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="#">Meet the Team</a>
+					<a class="block px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="#">FAQ</a>
+					<a class="block px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="#">Contact Us</a>
+				</div>
+			</div>
+		</div>    
+
+
+		<div @click.away="open = false" class="relative" x-data="{ open: false }">
+			<button @click="open = !open" class="flex flex-row items-center w-full px-4 py-2 mt-2 text-sm font-semibold text-left bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:focus:bg-gray-600 dark-mode:hover:bg-gray-600 md:w-auto md:inline md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline">
+				<span>Conference</span>
+				<svg fill="currentColor" viewBox="0 0 20 20" :class="{'rotate-180': open, 'rotate-0': !open}" class="inline w-4 h-4 mt-1 ml-1 transition-transform duration-200 transform md:-mt-1"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+			</button>
+			<div x-show="open" x-transition:enter="transition ease-out duration-100" x-transition:enter-start="transform opacity-0 scale-95" x-transition:enter-end="transform opacity-100 scale-100" x-transition:leave="transition ease-in duration-75" x-transition:leave-start="transform opacity-100 scale-100" x-transition:leave-end="transform opacity-0 scale-95" class="absolute right-0 w-full mt-2 origin-top-right rounded-md shadow-lg md:w-60">
+				<div class="px-2 py-2 bg-blue-600 rounded-md shadow dark-mode:bg-gray-800">
+					<a class="block px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="/schedule">Schedule</a>
+					<a class="block px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="/accommodation">Accommodation</a>
+					<a class="block px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="/resources">Resources</a>
+				</div>
+			</div>
+		</div>
+		<a class="px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="/councils/overview">Councils</a>
+		<a class="px-8 py-2 mt-2 text-sm font-semibold bg-purple-400 rounded-full md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-blue-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="/register">Register Now</a>
+		</nav>
+  	</div>
+</div>
+
+<main class="mx-2 md:mx-12 mb-4" style="min-height: calc(100vh - 10rem)">
+
+
+<div class="pt-10 flex flex-col-reverse md:flex-row ">
+
+<div class="p-4 md:p-10 text-center flex-none">
+	<div class="font-display p-5">Key Dates</div>
+
+	<table class="table-fixed">
+		<tbody class="">
+			<tr class="h-10">
+				<td class="even:bg-cyan-800 odd:bg-cyan-900 p-4 font-light ">Registration Deadline</td>
+				<td class="even:bg-cyan-800 odd:bg-cyan-900 p-4 font-semibold w-48">TBA</td>
+			</tr>
+		</tbody>
+	</table> 
+
+	<div class="font-display p-5 mt-8">Fees</div>
+
+	<table class="table-auto w-full">
+		<tbody class="">
+			<tr class="h-10">
+				<td class="even:bg-cyan-800 odd:bg-cyan-900 p-4 font-light">Individual Delegate</td>
+				<td class="even:bg-cyan-800 odd:bg-cyan-900 p-4 font-semibold w-48">MYR 100 / delegate</td>
+			</tr>
+			<tr class="h-10">
+				<td class="even:bg-cyan-800 odd:bg-cyan-900 p-4 font-light">Group Delegation</td>
+				<td class="even:bg-cyan-800 odd:bg-cyan-900 p-4 font-semibold">MYR 100 / delegate</td>
+			</tr>
+		<tr class="h-10">
+				<td class="even:bg-cyan-800 odd:bg-cyan-900 p-4 font-light">Advisor</td>
+				<td class="even:bg-cyan-800 odd:bg-cyan-900 p-4 font-semibold">MYR 85 / advisor</td>
+			</tr>
+		</tbody>
+	</table>  
+	
+</div>
+
+<div class="grow p-10 text-center">
+
+	<div class="font-display text-3xl py-4 text-center">REGISTRATION</div>
+
+	<div x-data="{ openTab: 1 }" class="py-6">
+		<ul class="flex border-b w-full font-lg font-bold">
+		<li @click="openTab = 1" class="w-full h-full">
+			<a><div class="cursor-pointer py-4  bg-purple-500 hover:bg-cyan-600" :class="{'bg-purple-800': openTab == 1}"  >Individual Delegate</div></a>
+		</li>
+		<li @click="openTab = 2" class="w-full h-full">
+			<a><div class="cursor-pointer py-4  bg-purple-500 hover:bg-cyan-600" :class="{'bg-purple-800': openTab == 2}"  >Group Delegation</div></a>
+		</li>
+		<li @click="openTab = 3" class="w-full h-full">
+			<a><div class="cursor-pointer py-7 md:py-4 bg-purple-500 hover:bg-cyan-600" :class="{'bg-purple-800': openTab == 3}"  >Advisor</div></a>
+		</li>
+		</ul>
+
+
+	<div class="w-full pt-4 font-semibold">
+		<div x-show="openTab === 1">
+			<div x-data="{ open: false }" class="py-1 flex flex-col items-center justify-center relative overflow-hidden ">
+			<div @click="open = ! open" class="cursor-pointer p-4 bg-blue-700 w-full flex justify-between items-center">
+				<div class="text-left text-lg text-white"><span class="font-bold">Step 1:</span> Pay the Fees
+				</div>
+				<div class='transform transition duration-300 ease-in-out' :class="{'rotate-180': open,' -translate-y-0.0': !open }">
+				<svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 20 20" stroke="currentColor" stroke-width="1"><path d="M13.962,8.885l-3.736,3.739c-0.086,0.086-0.201,0.13-0.314,0.13S9.686,12.71,9.6,12.624l-3.562-3.56C5.863,8.892,5.863,8.611,6.036,8.438c0.175-0.173,0.454-0.173,0.626,0l3.25,3.247l3.426-3.424c0.173-0.172,0.451-0.172,0.624,0C14.137,8.434,14.137,8.712,13.962,8.885 M18.406,10c0,4.644-3.763,8.406-8.406,8.406S1.594,14.644,1.594,10S5.356,1.594,10,1.594S18.406,5.356,18.406,10 M17.521,10c0-4.148-3.373-7.521-7.521-7.521c-4.148,0-7.521,3.374-7.521,7.521c0,4.147,3.374,7.521,7.521,7.521C14.148,17.521,17.521,14.147,17.521,10"></path></svg>
+				</div>
+			</div>
+			<div x-show="open"  x-transition:enter="transition ease-out duration-300" x-transition:enter-start="opacity-0 translate-y-0" x-transition:enter-end="opacity-100 translate-y-0" x-transition:leave="transition ease-in duration-300" x-transition:leave-start="opacity-100 translate-y-10" x-transition:leave-end="opacity-0 translate-y-0" class="w-full bg-cyan-600 p-4 border-l-4 border-cyan-300 text-justify">
+				Pay the fees of MYR 100 per delegate through the payment gateway below:
+				<div class="my-6 text-xs">To be announced</div>
+				Please remember to keep proof of payment for later use.
+			</div>
+			</div>
+
+			<div x-data="{ open: false }" class="py-1 flex flex-col items-center justify-center relative overflow-hidden ">
+			<div @click="open = ! open" class="cursor-pointer p-4 bg-blue-700 w-full flex justify-between items-center">
+				<div class="text-left text-lg text-white"><span class="font-bold">Step 2:</span> Fill in the Form
+				</div>
+				<div class='transform transition duration-300 ease-in-out' :class="{'rotate-180': open,' -translate-y-0.0': !open }">
+				<svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 20 20" stroke="currentColor" stroke-width="1"><path d="M13.962,8.885l-3.736,3.739c-0.086,0.086-0.201,0.13-0.314,0.13S9.686,12.71,9.6,12.624l-3.562-3.56C5.863,8.892,5.863,8.611,6.036,8.438c0.175-0.173,0.454-0.173,0.626,0l3.25,3.247l3.426-3.424c0.173-0.172,0.451-0.172,0.624,0C14.137,8.434,14.137,8.712,13.962,8.885 M18.406,10c0,4.644-3.763,8.406-8.406,8.406S1.594,14.644,1.594,10S5.356,1.594,10,1.594S18.406,5.356,18.406,10 M17.521,10c0-4.148-3.373-7.521-7.521-7.521c-4.148,0-7.521,3.374-7.521,7.521c0,4.147,3.374,7.521,7.521,7.521C14.148,17.521,17.521,14.147,17.521,10"></path></svg>
+				</div>
+			</div>
+			<div x-show="open"  x-transition:enter="transition ease-out duration-300" x-transition:enter-start="opacity-0 translate-y-0" x-transition:enter-end="opacity-100 translate-y-0" x-transition:leave="transition ease-in duration-300" x-transition:leave-start="opacity-100 translate-y-10" x-transition:leave-end="opacity-0 translate-y-0" class="w-full bg-cyan-600 p-4 border-l-4 border-cyan-300 text-justify">
+			Fill in the required information in the registration form below.<br>
+			Here is where you can upload your proof of payment.
+					<div class="text-center my-6 w-full"><a class="px-8 py-2 mx-2 font-semibold bg-purple-400 rounded-full hover:text-gray-900 hover:bg-blue-200" href="https://forms.gle/MBDa9pMNgNJUm4PX6">Individual Registration</a></div>
+			</div>
+			</div>
+
+			<div x-data="{ open: false }" class="py-1 flex flex-col items-center justify-center relative overflow-hidden ">
+			<div @click="open = ! open" class="cursor-pointer p-4 bg-blue-700 w-full flex justify-between items-center">
+				<div class="text-left text-lg text-white"><span class="font-bold">Step 3:</span> After Registering
+				</div>
+				<div class='transform transition duration-300 ease-in-out' :class="{'rotate-180': open,' -translate-y-0.0': !open }">
+				<svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 20 20" stroke="currentColor" stroke-width="1"><path d="M13.962,8.885l-3.736,3.739c-0.086,0.086-0.201,0.13-0.314,0.13S9.686,12.71,9.6,12.624l-3.562-3.56C5.863,8.892,5.863,8.611,6.036,8.438c0.175-0.173,0.454-0.173,0.626,0l3.25,3.247l3.426-3.424c0.173-0.172,0.451-0.172,0.624,0C14.137,8.434,14.137,8.712,13.962,8.885 M18.406,10c0,4.644-3.763,8.406-8.406,8.406S1.594,14.644,1.594,10S5.356,1.594,10,1.594S18.406,5.356,18.406,10 M17.521,10c0-4.148-3.373-7.521-7.521-7.521c-4.148,0-7.521,3.374-7.521,7.521c0,4.147,3.374,7.521,7.521,7.521C14.148,17.521,17.521,14.147,17.521,10"></path></svg>
+				</div>
+			</div>
+			<div x-show="open"  x-transition:enter="transition ease-out duration-300" x-transition:enter-start="opacity-0 translate-y-0" x-transition:enter-end="opacity-100 translate-y-0" x-transition:leave="transition ease-in duration-300" x-transition:leave-start="opacity-100 translate-y-10" x-transition:leave-end="opacity-0 translate-y-0" class="w-full bg-cyan-600 p-4 border-l-4 border-cyan-300 text-justify">
+			Be sure to check out the <em>after registering</em> section below. <br>Do not forget to follow our social media linked at the bottom of the page for furthur updates. <br>If you have any inquiries, do not hesitate to <a class="text-blue-400 hover:underline" href="/contact">contact us</a>.
+			</div>
+			</div>
+		</div>
+
+	  	<div x-show="openTab === 2">
+			<div x-data="{ open: false }" class="py-1 flex flex-col items-center justify-center relative overflow-hidden ">
+			<div @click="open = ! open" class="cursor-pointer p-4 bg-blue-700 w-full flex justify-between items-center">
+				<div class="text-left text-lg text-white"><span class="font-bold">Step 1: </span><span class="text-blue-200">(Head of Delegation) </span>Fill in the Group Registration Form
+				</div>
+				<div class='transform transition duration-300 ease-in-out' :class="{'rotate-180': open,' -translate-y-0.0': !open }">
+				<svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 20 20" stroke="currentColor" stroke-width="1"><path d="M13.962,8.885l-3.736,3.739c-0.086,0.086-0.201,0.13-0.314,0.13S9.686,12.71,9.6,12.624l-3.562-3.56C5.863,8.892,5.863,8.611,6.036,8.438c0.175-0.173,0.454-0.173,0.626,0l3.25,3.247l3.426-3.424c0.173-0.172,0.451-0.172,0.624,0C14.137,8.434,14.137,8.712,13.962,8.885 M18.406,10c0,4.644-3.763,8.406-8.406,8.406S1.594,14.644,1.594,10S5.356,1.594,10,1.594S18.406,5.356,18.406,10 M17.521,10c0-4.148-3.373-7.521-7.521-7.521c-4.148,0-7.521,3.374-7.521,7.521c0,4.147,3.374,7.521,7.521,7.521C14.148,17.521,17.521,14.147,17.521,10"></path></svg>
+				</div>
+			</div>
+			<div x-show="open"  x-transition:enter="transition ease-out duration-300" x-transition:enter-start="opacity-0 translate-y-0" x-transition:enter-end="opacity-100 translate-y-0" x-transition:leave="transition ease-in duration-300" x-transition:leave-start="opacity-100 translate-y-10" x-transition:leave-end="opacity-0 translate-y-0" class="w-full bg-cyan-600 p-4 border-l-4 border-cyan-300 text-justify">
+			The head of delegation is required to fill in the group registration form linked below. <br><br>Please note that a delegation should consist no less than 5 delegates and no more than 10 delegates. <br> A delegation is not required to have an advisor but a delegation should have no more than 2 advisors.
+					<div class="text-center my-6 w-full"><a class="px-8 py-2 mx-2 font-semibold bg-purple-400 rounded-full hover:text-gray-900 hover:bg-blue-200" href="https://forms.gle/x6UQAmkhMC5HdqRU6">Group Registration</a></div>
+			</div>
+			</div>
+
+			<div x-data="{ open: false }" class="py-1 flex flex-col items-center justify-center relative overflow-hidden ">
+			<div @click="open = ! open" class="cursor-pointer p-4 bg-blue-700 w-full flex justify-between items-center">
+				<div class="text-left text-lg text-white"><span class="font-bold">Step 2: </span><span class="text-blue-200">(Head of Delegation) </span>Pay the Fees
+				</div>
+				<div class='transform transition duration-300 ease-in-out' :class="{'rotate-180': open,' -translate-y-0.0': !open }">
+				<svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 20 20" stroke="currentColor" stroke-width="1"><path d="M13.962,8.885l-3.736,3.739c-0.086,0.086-0.201,0.13-0.314,0.13S9.686,12.71,9.6,12.624l-3.562-3.56C5.863,8.892,5.863,8.611,6.036,8.438c0.175-0.173,0.454-0.173,0.626,0l3.25,3.247l3.426-3.424c0.173-0.172,0.451-0.172,0.624,0C14.137,8.434,14.137,8.712,13.962,8.885 M18.406,10c0,4.644-3.763,8.406-8.406,8.406S1.594,14.644,1.594,10S5.356,1.594,10,1.594S18.406,5.356,18.406,10 M17.521,10c0-4.148-3.373-7.521-7.521-7.521c-4.148,0-7.521,3.374-7.521,7.521c0,4.147,3.374,7.521,7.521,7.521C14.148,17.521,17.521,14.147,17.521,10"></path></svg>
+				</div>
+			</div>
+			<div x-show="open"  x-transition:enter="transition ease-out duration-300" x-transition:enter-start="opacity-0 translate-y-0" x-transition:enter-end="opacity-100 translate-y-0" x-transition:leave="transition ease-in duration-300" x-transition:leave-start="opacity-100 translate-y-10" x-transition:leave-end="opacity-0 translate-y-0" class="w-full bg-cyan-600 p-4 border-l-4 border-cyan-300 text-justify">
+				We will email the head of delegation the quotation after the head of delegation fills in the form. <br><br>The registration fee is set at MYR 100 per delegate and MYR 85 per advisor.<br><br>
+
+				Pay the fees through the payment gateway below:
+				<div class="my-6 text-xs">To be announced</div>
+
+				Follow the instruction in the email to upload the proof of payment.
+			</div>
+			</div>
+
+			<div x-data="{ open: false }" class="py-1 flex flex-col items-center justify-center relative overflow-hidden ">
+			<div @click="open = ! open" class="cursor-pointer p-4 bg-blue-700 w-full flex justify-between items-center">
+				<div class="text-left text-lg text-white"><span class="font-bold">Step 3: </span><span class="text-blue-200">(All Delegates) </span>Fill in the Individual Registration Form
+				</div>
+				<div class='transform transition duration-300 ease-in-out' :class="{'rotate-180': open,' -translate-y-0.0': !open }">
+				<svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 20 20" stroke="currentColor" stroke-width="1"><path d="M13.962,8.885l-3.736,3.739c-0.086,0.086-0.201,0.13-0.314,0.13S9.686,12.71,9.6,12.624l-3.562-3.56C5.863,8.892,5.863,8.611,6.036,8.438c0.175-0.173,0.454-0.173,0.626,0l3.25,3.247l3.426-3.424c0.173-0.172,0.451-0.172,0.624,0C14.137,8.434,14.137,8.712,13.962,8.885 M18.406,10c0,4.644-3.763,8.406-8.406,8.406S1.594,14.644,1.594,10S5.356,1.594,10,1.594S18.406,5.356,18.406,10 M17.521,10c0-4.148-3.373-7.521-7.521-7.521c-4.148,0-7.521,3.374-7.521,7.521c0,4.147,3.374,7.521,7.521,7.521C14.148,17.521,17.521,14.147,17.521,10"></path></svg>
+				</div>
+			</div>
+			<div x-show="open"  x-transition:enter="transition ease-out duration-300" x-transition:enter-start="opacity-0 translate-y-0" x-transition:enter-end="opacity-100 translate-y-0" x-transition:leave="transition ease-in duration-300" x-transition:leave-start="opacity-100 translate-y-10" x-transition:leave-end="opacity-0 translate-y-0" class="w-full bg-cyan-600 p-4 border-l-4 border-cyan-300 text-justify">
+				Once payment is made, we will email the head of delegation the delegation code.<br>
+				All members of delegation are required to fill in the individual registration form below upon receiving the delegation code.<br>
+				Advisors are required to fill in the advisor registration form which can be found in the advisor tab.
+
+					<div class="text-center my-6 w-full"><a class="px-8 py-2 mx-2 font-semibold bg-purple-400 rounded-full hover:text-gray-900 hover:bg-blue-200" href="https://forms.gle/MBDa9pMNgNJUm4PX6">Individual Registration</a></div>
+			</div>
+			</div>
+
+			<div x-data="{ open: false }" class="py-1 flex flex-col items-center justify-center relative overflow-hidden ">
+			<div @click="open = ! open" class="cursor-pointer p-4 bg-blue-700 w-full flex justify-between items-center">
+				<div class="text-left text-lg text-white"><span class="font-bold">Step 4: </span><span class="text-blue-200">(All Delegates) </span> After Registering
+				</div>
+				<div class='transform transition duration-300 ease-in-out' :class="{'rotate-180': open,' -translate-y-0.0': !open }">
+				<svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 20 20" stroke="currentColor" stroke-width="1"><path d="M13.962,8.885l-3.736,3.739c-0.086,0.086-0.201,0.13-0.314,0.13S9.686,12.71,9.6,12.624l-3.562-3.56C5.863,8.892,5.863,8.611,6.036,8.438c0.175-0.173,0.454-0.173,0.626,0l3.25,3.247l3.426-3.424c0.173-0.172,0.451-0.172,0.624,0C14.137,8.434,14.137,8.712,13.962,8.885 M18.406,10c0,4.644-3.763,8.406-8.406,8.406S1.594,14.644,1.594,10S5.356,1.594,10,1.594S18.406,5.356,18.406,10 M17.521,10c0-4.148-3.373-7.521-7.521-7.521c-4.148,0-7.521,3.374-7.521,7.521c0,4.147,3.374,7.521,7.521,7.521C14.148,17.521,17.521,14.147,17.521,10"></path></svg>
+				</div>
+			</div>
+			<div x-show="open"  x-transition:enter="transition ease-out duration-300" x-transition:enter-start="opacity-0 translate-y-0" x-transition:enter-end="opacity-100 translate-y-0" x-transition:leave="transition ease-in duration-300" x-transition:leave-start="opacity-100 translate-y-10" x-transition:leave-end="opacity-0 translate-y-0" class="w-full bg-cyan-600 p-4 border-l-4 border-cyan-300 text-justify">
+			Be sure to check out the <em>after registering</em> section below. <br>Do not forget to follow our social media linked at the bottom of the page for furthur updates. <br>If you have any inquiries, do not hesitate to <a class="text-blue-400 hover:underline" href="/contact">contact us</a>.
+			</div>
+			</div>
+	  	</div>
+
+		<div x-show="openTab === 3">
+			<div x-data="{ open: false }" class="py-1 flex flex-col items-center justify-center relative overflow-hidden ">
+			<div @click="open = ! open" class="cursor-pointer p-4 bg-blue-700 w-full flex justify-between items-center">
+				<div class="text-left text-lg text-white"><span class="font-bold">Step 1: </span><span class="text-blue-200">(if applicable) </span>Pay the Fees
+				</div>
+				<div class='transform transition duration-300 ease-in-out' :class="{'rotate-180': open,' -translate-y-0.0': !open }">
+				<svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 20 20" stroke="currentColor" stroke-width="1"><path d="M13.962,8.885l-3.736,3.739c-0.086,0.086-0.201,0.13-0.314,0.13S9.686,12.71,9.6,12.624l-3.562-3.56C5.863,8.892,5.863,8.611,6.036,8.438c0.175-0.173,0.454-0.173,0.626,0l3.25,3.247l3.426-3.424c0.173-0.172,0.451-0.172,0.624,0C14.137,8.434,14.137,8.712,13.962,8.885 M18.406,10c0,4.644-3.763,8.406-8.406,8.406S1.594,14.644,1.594,10S5.356,1.594,10,1.594S18.406,5.356,18.406,10 M17.521,10c0-4.148-3.373-7.521-7.521-7.521c-4.148,0-7.521,3.374-7.521,7.521c0,4.147,3.374,7.521,7.521,7.521C14.148,17.521,17.521,14.147,17.521,10"></path></svg>
+				</div>
+			</div>
+			<div x-show="open"  x-transition:enter="transition ease-out duration-300" x-transition:enter-start="opacity-0 translate-y-0" x-transition:enter-end="opacity-100 translate-y-0" x-transition:leave="transition ease-in duration-300" x-transition:leave-start="opacity-100 translate-y-10" x-transition:leave-end="opacity-0 translate-y-0" class="w-full bg-cyan-600 p-4 border-l-4 border-cyan-300 text-justify">
+				Pay the fees of MYR 85 per advisor through the payment gateway below:
+				<div class="my-6 text-xs">To be announced</div>
+				Noted that you do not have to pay again if you have already paid together with your group delegation.<br><br>
+				Please remember to keep proof of payment for later use.
+			</div>
+			</div>
+
+			<div x-data="{ open: false }" class="py-1 flex flex-col items-center justify-center relative overflow-hidden ">
+			<div @click="open = ! open" class="cursor-pointer p-4 bg-blue-700 w-full flex justify-between items-center">
+				<div class="text-left text-lg text-white"><span class="font-bold">Step 2:</span> Fill in the Form
+				</div>
+				<div class='transform transition duration-300 ease-in-out' :class="{'rotate-180': open,' -translate-y-0.0': !open }">
+				<svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 20 20" stroke="currentColor" stroke-width="1"><path d="M13.962,8.885l-3.736,3.739c-0.086,0.086-0.201,0.13-0.314,0.13S9.686,12.71,9.6,12.624l-3.562-3.56C5.863,8.892,5.863,8.611,6.036,8.438c0.175-0.173,0.454-0.173,0.626,0l3.25,3.247l3.426-3.424c0.173-0.172,0.451-0.172,0.624,0C14.137,8.434,14.137,8.712,13.962,8.885 M18.406,10c0,4.644-3.763,8.406-8.406,8.406S1.594,14.644,1.594,10S5.356,1.594,10,1.594S18.406,5.356,18.406,10 M17.521,10c0-4.148-3.373-7.521-7.521-7.521c-4.148,0-7.521,3.374-7.521,7.521c0,4.147,3.374,7.521,7.521,7.521C14.148,17.521,17.521,14.147,17.521,10"></path></svg>
+				</div>
+			</div>
+			<div x-show="open"  x-transition:enter="transition ease-out duration-300" x-transition:enter-start="opacity-0 translate-y-0" x-transition:enter-end="opacity-100 translate-y-0" x-transition:leave="transition ease-in duration-300" x-transition:leave-start="opacity-100 translate-y-10" x-transition:leave-end="opacity-0 translate-y-0" class="w-full bg-cyan-600 p-4 border-l-4 border-cyan-300 text-justify">
+			Fill in the required information in the registration form below.<br>
+			Here is where you can upload your proof of payment.
+					<div class="text-center my-6 w-full"><a class="px-8 py-2 mx-2 font-semibold bg-purple-400 rounded-full hover:text-gray-900 hover:bg-blue-200" href="https://forms.gle/SWjk9pz5F7LPjdzY8">Advisor Registration</a></div>
+			</div>
+			</div>
+
+			<div x-data="{ open: false }" class="py-1 flex flex-col items-center justify-center relative overflow-hidden ">
+			<div @click="open = ! open" class="cursor-pointer p-4 bg-blue-700 w-full flex justify-between items-center">
+				<div class="text-left text-lg text-white"><span class="font-bold">Step 3:</span> After Registering
+				</div>
+				<div class='transform transition duration-300 ease-in-out' :class="{'rotate-180': open,' -translate-y-0.0': !open }">
+				<svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 20 20" stroke="currentColor" stroke-width="1"><path d="M13.962,8.885l-3.736,3.739c-0.086,0.086-0.201,0.13-0.314,0.13S9.686,12.71,9.6,12.624l-3.562-3.56C5.863,8.892,5.863,8.611,6.036,8.438c0.175-0.173,0.454-0.173,0.626,0l3.25,3.247l3.426-3.424c0.173-0.172,0.451-0.172,0.624,0C14.137,8.434,14.137,8.712,13.962,8.885 M18.406,10c0,4.644-3.763,8.406-8.406,8.406S1.594,14.644,1.594,10S5.356,1.594,10,1.594S18.406,5.356,18.406,10 M17.521,10c0-4.148-3.373-7.521-7.521-7.521c-4.148,0-7.521,3.374-7.521,7.521c0,4.147,3.374,7.521,7.521,7.521C14.148,17.521,17.521,14.147,17.521,10"></path></svg>
+				</div>
+			</div>
+			<div x-show="open"  x-transition:enter="transition ease-out duration-300" x-transition:enter-start="opacity-0 translate-y-0" x-transition:enter-end="opacity-100 translate-y-0" x-transition:leave="transition ease-in duration-300" x-transition:leave-start="opacity-100 translate-y-10" x-transition:leave-end="opacity-0 translate-y-0" class="w-full bg-cyan-600 p-4 border-l-4 border-cyan-300 text-justify">
+			Be sure to check out the <em>after registering</em> section below. <br>Do not forget to follow our social media linked at the bottom of the page for furthur updates. <br>If you have any inquiries, do not hesitate to <a class="text-blue-400 hover:underline" href="/contact">contact us</a>.
+			</div>
+			</div>
+		</div>
+
+	</div>
+
+	<div class="text-left">
+		<div class="font-display text-2xl py-4 mt-8 text-center text-blue-300">After Registering</div>
+		<div class="font-display text-xl py-4">Chair Application</div>
+		<div class="">We welcome experienced delegates to participate as chair or crisis director. Please note that due to the competitive nature of chairs applications, acceptance is not guaranteed. Click on the registration form below to apply.</div>
+		<div class="text-center my-6 w-full"><a class="px-16 py-2 mx-2 font-semibold bg-purple-400 rounded-full hover:text-gray-900 hover:bg-blue-200" href="https://forms.gle/h41EYDBACEf98zWE6">Chair Application</a></div>
+		<div class="text-center my-6 w-full"><a class="px-8 py-2 mx-2 font-semibold bg-purple-400 rounded-full hover:text-gray-900 hover:bg-blue-200" href="https://forms.gle/qNUM9HwMwTm8vjrc7">Crisis Director Application</a></div>
+		<div class="font-display text-xl py-4">Accommodation</div>
+		<div class="">Check out our <a class="text-blue-400 hover:underline" href="/accommodation">accommodation page</a> for recommendations on where to stay for the duration of the conference.</div>
+
+
+
+	</div>
+
+	</div>
+</div>
+
+</div>
+
+</main>
+
+<footer class="bg-blue-900 px-4 py-4 md:h-40 h-56">
+	<div class="flex flex-col md:flex-row ">
+		<div class="md:visible hidden basis-1/3 md:flex my-auto"><img class="h-12 mx-2" src="/images/logo-white.webp"><div class="my-auto">GENIUS Model United Nations</div></div>
+		<div class="basis-1/3 font-display text-center my-auto py-4 text-xl">16 - 18 June 2023</div>
+		<div class="basis-1/3 text-center">
+			Follow us on:
+   			<div class="flex space-x-4 justify-center my-2">
+				<a href="https://www.instagram.com/gmun_23/"><img class="h-12" src="/images/instagram.svg" alt="instagram"></a>
+				<a href="https://www.twitter.com/"><img class="h-12" src="/images/twitter.svg" alt="twitter"></a>
+				<a href="mailto:genmodelun@gmail.com"><img class="h-12" src="/images/mail.svg" alt="mail"></a>
+			</div>
+		</div>
+	</div>
+	<div class="text-sm text-blue-700 my-2">Copyright @ 2023 GMUN</div>
+</footer>
+
+</body>
+</html>
