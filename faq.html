@@ -14,58 +14,6 @@
 	<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900" rel="stylesheet">
 	<script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
-  	<script src="https://cdn.tailwindcss.com"></script>
-	<script>
-		tailwind.config = {
-			theme: {
-				fontFamily: {
-					'display': ['Horizon'],
-					'body': ['Montserrat'],
-				},
-				colors: {
-					'blue': {
-						100: '#CAF0F8',
-						200: '#ADE8F4',
-						300: '#90E0EF',
-						400: '#48CAE4',
-						500: '#00B4D8',
-						600: '#0096C7',
-						700: '#0077B6',
-						800: '#023E8A',
-						900: '#03045E'
-					},
-					'cyan': {
-						50: '#D9ED92',
-						100: '#B5E48C',
-						200: '#00D98C',
-						300: '#76C893',
-						400: '#52B69A',
-						500: '#34A0A4',
-						600: '#168AAD',
-						700: '#1A759F',
-						800: '#1E6091',
-						900: '#184E77'
-					},
-					'purple': {
-						50: '#80FFD8',
-						100: '#72EFDD',
-						200: '#64DFDF',
-						300: '#56CFE1',
-						400: '#48BFE3',
-						500: '#4EA8DE',
-						600: '#5390D9',
-						700: '#5E60CE',
-						800: '#6930C3',
-						900: '#7400B8'
-					},
-					'transparent': 'transparent',
-      				'current': 'currentColor',
-      				'black': 'colors.black',
-      				'white': 'colors.white'
-				}
-			}
-		}
-	</script>
 </head>
 
 <body class="font-body bg-blue-800 text-white text-base">
@@ -300,6 +248,19 @@ Students who are currently enrolled in any educational institution of any level 
   </div>
   <div x-show="open"  x-transition:enter="transition ease-out duration-300" x-transition:enter-start="opacity-0 translate-y-0" x-transition:enter-end="opacity-100 translate-y-0" x-transition:leave="transition ease-in duration-300" x-transition:leave-start="opacity-100 translate-y-10" x-transition:leave-end="opacity-0 translate-y-0" class="w-full bg-cyan-600 p-4 border-l-4 border-cyan-300">
 		Check out our <a class="text-blue-400 hover:underline" href="/accommodation">accommodation page</a> for recommendations on where to stay for the duration of the conference.
+  </div>
+</div>
+
+<div x-data="{ open: false }" class="py-1 flex flex-col items-center justify-center relative overflow-hidden">
+  <div @click="open = ! open" class="cursor-pointer p-4 bg-blue-700 w-full flex justify-between items-center">
+    <div class="flex items-center gap-2 text-lg text-white">What awards will GMUN offer?
+    </div>
+    <div class='transform transition duration-300 ease-in-out' :class="{'rotate-180': open,' -translate-y-0.0': !open }">
+    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 20 20" stroke="currentColor" stroke-width="1"><path d="M13.962,8.885l-3.736,3.739c-0.086,0.086-0.201,0.13-0.314,0.13S9.686,12.71,9.6,12.624l-3.562-3.56C5.863,8.892,5.863,8.611,6.036,8.438c0.175-0.173,0.454-0.173,0.626,0l3.25,3.247l3.426-3.424c0.173-0.172,0.451-0.172,0.624,0C14.137,8.434,14.137,8.712,13.962,8.885 M18.406,10c0,4.644-3.763,8.406-8.406,8.406S1.594,14.644,1.594,10S5.356,1.594,10,1.594S18.406,5.356,18.406,10 M17.521,10c0-4.148-3.373-7.521-7.521-7.521c-4.148,0-7.521,3.374-7.521,7.521c0,4.147,3.374,7.521,7.521,7.521C14.148,17.521,17.521,14.147,17.521,10"></path></svg>
+    </div>
+  </div>
+  <div x-show="open"  x-transition:enter="transition ease-out duration-300" x-transition:enter-start="opacity-0 translate-y-0" x-transition:enter-end="opacity-100 translate-y-0" x-transition:leave="transition ease-in duration-300" x-transition:leave-start="opacity-100 translate-y-10" x-transition:leave-end="opacity-0 translate-y-0" class="w-full bg-cyan-600 p-4 border-l-4 border-cyan-300">
+Every councils will have one Best Delegate award, one Best Position Paper award, and a few runner-ups awards. In addition, if you register as part of group delegation, you are eligible to win the Best Delegation award.
   </div>
 </div>
 
