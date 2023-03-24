@@ -4,11 +4,6 @@
   src: url("./fonts/horizon.woff2") format("woff2");
 }
 
-.arrow a {
-  color: white;
-  text-decoration: none;
-}
-
 .bounce {
   animation: bounce 2s infinite;
 }
@@ -550,12 +545,16 @@ video {
   position: relative;
 }
 
+.bottom-20 {
+  bottom: 5rem;
+}
+
 .right-0 {
   right: 0px;
 }
 
-.top-32 {
-  top: 8rem;
+.top-24 {
+  top: 6rem;
 }
 
 .z-40 {
@@ -639,10 +638,6 @@ video {
 
 .ml-2 {
   margin-left: 0.5rem;
-}
-
-.ml-4 {
-  margin-left: 1rem;
 }
 
 .mt-1 {
@@ -793,6 +788,11 @@ video {
   width: 2rem;
 }
 
+.w-fit {
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
 .w-full {
   width: 100%;
 }
@@ -940,6 +940,10 @@ video {
 
 .overflow-hidden {
   overflow: hidden;
+}
+
+.scroll-smooth {
+  scroll-behavior: smooth;
 }
 
 .rounded-full {
@@ -1126,6 +1130,10 @@ video {
   padding-top: 3rem;
 }
 
+.pt-14 {
+  padding-top: 3.5rem;
+}
+
 .pt-24 {
   padding-top: 6rem;
 }
@@ -1168,13 +1176,13 @@ video {
   line-height: 2.25rem;
 }
 
-.text-5xl {
-  font-size: 3rem;
-  line-height: 1;
+.text-4xl {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
 }
 
-.text-6xl {
-  font-size: 3.75rem;
+.text-5xl {
+  font-size: 3rem;
   line-height: 1;
 }
 
@@ -1246,6 +1254,11 @@ video {
 .text-gray-900 {
   --tw-text-opacity: 1;
   color: rgb(17 24 39 / var(--tw-text-opacity));
+}
+
+.text-purple-400 {
+  --tw-text-opacity: 1;
+  color: rgb(72 191 227 / var(--tw-text-opacity));
 }
 
 .text-white {
@@ -1390,6 +1403,10 @@ video {
 }
 
 @media (min-width: 768px) {
+  .md\:top-32 {
+    top: 8rem;
+  }
+
   .md\:inline {
     display: inline;
   }
@@ -1404,6 +1421,31 @@ video {
 
   .md\:w-48 {
     width: 12rem;
+  }
+
+  .md\:py-6 {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+  }
+
+  .md\:text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
+  .md\:text-3xl {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
+
+  .md\:text-5xl {
+    font-size: 3rem;
+    line-height: 1;
+  }
+
+  .md\:text-6xl {
+    font-size: 3.75rem;
+    line-height: 1;
   }
 }
 
@@ -1434,10 +1476,6 @@ video {
 
   .lg\:-mt-1 {
     margin-top: -0.25rem;
-  }
-
-  .lg\:ml-10 {
-    margin-left: 2.5rem;
   }
 
   .lg\:ml-4 {
@@ -1549,10 +1587,6 @@ video {
 }
 
 @media (min-width: 1280px) {
-  .xl\:ml-28 {
-    margin-left: 7rem;
-  }
-
   .xl\:h-36 {
     height: 9rem;
   }
