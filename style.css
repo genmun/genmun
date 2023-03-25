@@ -1231,6 +1231,10 @@ video {
   font-weight: 600;
 }
 
+.italic {
+  font-style: italic;
+}
+
 .text-blue-200 {
   --tw-text-opacity: 1;
   color: rgb(173 232 244 / var(--tw-text-opacity));
@@ -1254,11 +1258,6 @@ video {
 .text-gray-900 {
   --tw-text-opacity: 1;
   color: rgb(17 24 39 / var(--tw-text-opacity));
-}
-
-.text-purple-400 {
-  --tw-text-opacity: 1;
-  color: rgb(72 191 227 / var(--tw-text-opacity));
 }
 
 .text-white {
