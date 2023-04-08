@@ -946,6 +946,10 @@ video {
   scroll-behavior: smooth;
 }
 
+.rounded-3xl {
+  border-radius: 1.5rem;
+}
+
 .rounded-full {
   border-radius: 9999px;
 }
