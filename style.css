@@ -970,6 +970,11 @@ video {
   border-left-width: 4px;
 }
 
+.border-blue-300 {
+  --tw-border-opacity: 1;
+  border-color: rgb(144 224 239 / var(--tw-border-opacity));
+}
+
 .border-cyan-300 {
   --tw-border-opacity: 1;
   border-color: rgb(118 200 147 / var(--tw-border-opacity));
@@ -1107,11 +1112,6 @@ video {
 .py-6 {
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
-}
-
-.py-7 {
-  padding-top: 1.75rem;
-  padding-bottom: 1.75rem;
 }
 
 .pb-4 {
@@ -1600,10 +1600,5 @@ video {
 
   .xl\:flex-row {
     flex-direction: row;
-  }
-
-  .xl\:py-4 {
-    padding-top: 1rem;
-    padding-bottom: 1rem;
   }
 }
