@@ -99,7 +99,7 @@
 			<tr class="h-10">
 				<td class="even:bg-cyan-800 odd:bg-cyan-900 p-4 font-light w-64">Individual Delegate</td>
 				<td class="even:bg-cyan-800 odd:bg-cyan-900 p-4 font-semibold w-52">MYR 100 / delegate</td>
-			</tr>
+			</tr>z
 			<tr class="h-10">
 				<td class="even:bg-cyan-800 odd:bg-cyan-900 p-4 font-light">Group Delegation</td>
 				<td class="even:bg-cyan-800 odd:bg-cyan-900 p-4 font-semibold">MYR 100 / delegate</td>
@@ -130,15 +130,22 @@
 	
 </div>
 
-<div class="grow p-10 text-center">
+	
+	<div class="grow p-10 text-center">
+	
+		<div class="font-display text-xl lg:text-3xl py-4 text-center">REGISTRATION</div>
 
-	<div class="font-display text-xl lg:text-3xl py-4 text-center">REGISTRATION</div>
+		<div class="font-body text-xl pt-14 text-center">
+			Due to overwhelming responses, we have reached our maximum capacity. Hence, we regret to inform that the registrations are now <strong>closed</strong>. <br><br>
+			Our sincere apologies for any inconvenience caused. We thank you for showing deep interest in GMUN'23! <br>
+			Do look out for our future conferences! 
+		</div>
 
-	<div x-data="{ openTab: 1 }" class="py-6">
+	<div x-data="{ openTab: 1 }" class="py-6 hidden">
 		<ul class="flex border-b w-full font-lg font-bold max-w-sm xl:max-w-none mx-auto">
 		<li @click="openTab = 1" class="w-full h-full">
 			<a><div class="cursor-pointer py-4 bg-blue-900 hover:bg-cyan-800 focus:bg-blue-900" :class="{'bg-purple-500': openTab != 1}"   >Individual Delegate</div></a>
-		</li>
+		</li>  
 		<li @click="openTab = 2" class="w-full h-full">
 			<a><div class="cursor-pointer py-4 bg-blue-900 hover:bg-cyan-800 focus:bg-blue-900" :class="{'bg-purple-500': openTab != 2}"  >Group Delegation</div></a>
 		</li>
@@ -175,7 +182,6 @@
 
 
 
-	</div>
 
 	</div>
 </div>
