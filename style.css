@@ -553,8 +553,8 @@ video {
   right: 0px;
 }
 
-.top-24 {
-  top: 6rem;
+.top-40 {
+  top: 12rem;
 }
 
 .z-40 {
@@ -1447,8 +1447,8 @@ video {
 }
 
 @media (min-width: 768px) {
-  .md\:top-32 {
-    top: 8rem;
+  .md\:top-36 {
+    top: 9rem;
   }
 
   .md\:inline {
