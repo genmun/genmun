@@ -22,7 +22,7 @@
 		Registration is now closed. Please complete your payment by 7pm, 30th June 2023.
 			
 			  </div>
-	<div x-data="{ open: false }" :class="{'bg-blue-800': open, 'bg-transparent': !open}" class="px-4 flex flex-col max-w-screen-xl ml-0 mx-auto lg:items-center lg:justify-between lg:flex-row">
+	<div x-data="{ open: false }" :class="{'bg-blue-800': open, 'bg-transparent': !open}" class="px-4 flex flex-col ml-0 mx-auto lg:items-center lg:justify-between lg:flex-row">
 		<div class="p-4 flex flex-row items-center justify-between">
 			<a href="/" ><img class="ml-2 h-12" src="/images/logo-white.webp"></a>
 			<button class="lg:hidden rounded-lg focus:outline-none focus:shadow-outline" @click="open = !open">
@@ -33,7 +33,7 @@
 	  		</button>
 		</div>
 
-		<nav :class="{'flex': open, 'hidden': !open}" class="flex-col flex-grow pb-4 lg:pb-0 hidden lg:flex lg:justify-end lg:flex-row">
+		<nav :class="{'flex': open, 'hidden': !open}" class="flex-col flex-grow pb-4 lg:pb-0 hidden lg:flex lg:justify-center lg:flex-row">
 		<a class="px-4 py-2 mt-2 text-sm font-semibold rounded-lg lg:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="/">Home</a>
 
 		<div @click.away="open = false" class="relative" x-data="{ open: false }">
