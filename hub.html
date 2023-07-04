@@ -6,7 +6,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<title>UNEP | GMUN 2023</title>
+	<title>Delegates Hub | GMUN 2023</title>
 
 	<link rel="stylesheet" href="/style.css" type="text/css" media="all" />
 	<link rel="shortcut icon" type="image/x-icon" href="/images/favicon.ico">
@@ -67,65 +67,39 @@
 		</nav>
   	</div>
 </div>
-<main>
+<main class="mx-12 lg:mx-52 mb-4" style="min-height: calc(100vh - 10rem)">
 
-<div class="flex flex-col-reverse lg:flex-row"  style="min-height: calc(100vh - 10rem)">
-
-<div class="pt-4 lg:pt-24 px-6 h-auto bg-cyan-900 lg:w-56" id="sidebar">
-<img class="h-28 mx-auto" src="/images/councils/unep.webp">
-
-
-        <div class="my-8 font-display">
-		    <div class="my-8"><a class="px-4 py-2 font-semibold bg-transparent rounded-lg hover:text-gray-900 hover:bg-gray-200" href="/councils/overview">Overview</a></div>
-		    <div class="my-4"><a class="px-4 py-2 font-semibold bg-transparent rounded-lg hover:text-gray-900 hover:bg-gray-200" href="/councils/unep">UNEP</a></div>
-		    <div class="my-4"><a class="px-4 py-2 font-semibold bg-transparent rounded-lg hover:text-gray-900 hover:bg-gray-200" href="/councils/unwomen">UNWOMEN</a></div>
-		    <div class="my-4"><a class="px-4 py-2 font-semibold bg-transparent rounded-lg hover:text-gray-900 hover:bg-gray-200" href="/councils/unhrc">UNHRC</a></div>
-		    <div class="my-4"><a class="px-4 py-2 font-semibold bg-transparent rounded-lg hover:text-gray-900 hover:bg-gray-200" href="/councils/ecosoc">ECOSOC</a></div>
-			<div class="my-4"><a class="px-4 py-2 font-semibold bg-transparent rounded-lg hover:text-gray-900 hover:bg-gray-200" href="/councils/unesco">UNESCO</a></div>
-			<div class="my-4"><a class="px-4 py-2 font-semibold bg-transparent rounded-lg hover:text-gray-900 hover:bg-gray-200" href="/councils/disec">DISEC</a></div>
-		    <div class="my-4"><a class="px-4 py-2 font-semibold bg-transparent rounded-lg hover:text-gray-900 hover:bg-gray-200" href="/councils/crisis">Crisis</a></div>
-		    <div class="my-4"><a class="px-4 py-2 font-semibold bg-transparent rounded-lg hover:text-gray-900 hover:bg-gray-200" href="/councils/unsc">UNSC</a></div>
-		    <div class="my-4"><a class="px-4 py-2 font-semibold bg-transparent rounded-lg hover:text-gray-900 hover:bg-gray-200" href="/councils/press">Press</a></div>        </div>
-    </div>
-    <div class="lg:w-full mx-4 lg:mx-32">
-        <div class="font-display text-3xl pt-24 text-center">United Nations Environment Programme</div>
-
-        <div class="flex flex-wrap ">
-            <div class="py-10 lg:w-auto w-full">
-            <div class="font-display text-xl text-center">Board of Dais</div>
-	        <div class="flex flex-row lg:flex-col justify-center">
-                <div class="text-center p-2">
-                    <img src="/images/dais/Shapa_UNEP.webp" class="w-20 lg:w-32 mx-auto my-2">
-                    <div class="font-bold">Chair</div>
-                    <div class="">Nuraini Shapariah</div>
-                    <div class="text-xs">nurainishapariah@gmail.com</div>
-                </div>
-                <div class="text-center p-2">
-                    <img src="/images/dais/dhanya.webp" class="w-20 lg:w-32 mx-auto my-2">
-                    <div class="font-bold">Co-Chair</div>
-                    <div class="">Dhanya Dhayanand</div>
-                    <div class="text-xs"></div>
-                </div>
-            </div>
-            </div>
-           <div class="py-4 pb-8 lg:py-10 lg:mx-14 grow text-justify lg:w-0 mb-20">
-                <div class="font-display text-xl text-left pb-4">Background</div>
-                <div class="text-justify">To be announced.<br><b>Note: </b>This council will follow <a class="text-blue-400 hover:underline" href="/resources">HMUN Rules of Procedure.</a></div>
-                <div class="font-display text-xl text-left py-4 pt-12">Topic 1: Enforcing Regulations on the Usage of Nuclear Plants</div>
-                <div class="text-justify"></div>
-                <div class="font-display text-xl text-left py-4 pt-12">Topic 2: Ensuring a Just Transition Into Sustainability</div>
-                <div class="text-justify"></div>
-            </div>
-        </div>
-
-        </div>
-    </div>
-
-
+<div class="font-display text-2xl lg:text-3xl pt-24 text-center">
+    RESOURCES
 </div>
 
-</main>
+	<div x-data="{ openTab: 1 }" class="py-6 hidden">
+		<ul class="flex border-b w-full font-lg font-bold max-w-sm xl:max-w-none mx-auto">
+		<li @click="openTab = 1" class="w-full h-full">
+			<a><div class="cursor-pointer py-4 bg-blue-900 hover:bg-cyan-800 focus:bg-blue-900" :class="{'bg-purple-500': openTab != 1}"   >Individual Delegate</div></a>
+		</li>  
+		<li @click="openTab = 2" class="w-full h-full">
+			<a><div class="cursor-pointer py-4 bg-blue-900 hover:bg-cyan-800 focus:bg-blue-900" :class="{'bg-purple-500': openTab != 2}"  >Group Delegation</div></a>
+		</li>
+		</ul>
 
+
+	<div class="w-full pt-4 font-body text-left pb-8 px-4 mb-4 bg-blue-700 p-4 border-l-4 border-blue-300">
+		<div x-show="openTab === 1">
+			Fill in the following form. After registering, we will send you an email containing your invoice and payment details.
+					<div class="text-center my-6 w-full"><a class="block md:inline px-8 py-2 mx-2 font-semibold bg-purple-400 rounded-full hover:text-gray-900 hover:bg-blue-200" href="https://forms.gle/MBDa9pMNgNJUm4PX6">Individual Registration</a></div>
+					<div class="text-center my-6 w-full"><a class="block md:inline px-8 py-2 mx-2 font-semibold bg-purple-400 rounded-full hover:text-gray-900 hover:bg-blue-200" href="https://forms.gle/SWjk9pz5F7LPjdzY8">Advisor Registration</a></div>
+		</div>
+
+	  	<div x-show="openTab === 2">
+			Fill in the following form and email it to <a class="text-blue-400 hover:underline" href="mailto:register@gmun.my">register@gmun.my</a>. After registering, we will send you an email containing your invoice and payment details.
+					<div class="text-center my-6 w-full"><a class="block md:inline px-8 py-2 mx-2 font-semibold bg-purple-400 rounded-3xl hover:text-gray-900 hover:bg-blue-200" href="/GMUN_2023_Group_Registration.pdf"><img class="inline h-6 px-2" src="/images/pdf.svg">Download Group Registration Form</a></div>
+			Please note that a delegation should consist of no less than 5 delegates and no more than 10 delegates. <br> A delegation is allowed to have no more than 2 advisors, though they are not required.
+	  	</div>
+	</div>
+
+
+</main>
 
 <footer class="bg-blue-900 px-4 lg:px-16 py-4 lg:h-40 h-56">
 	<div class="flex flex-col lg:flex-row ">
