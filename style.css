@@ -1669,3 +1669,7 @@ video {
     flex-direction: row;
   }
 }
+
+.break-words {
+    overflow-wrap: break-word;
+}
