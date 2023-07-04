@@ -83,22 +83,149 @@
 			<a><div class="cursor-pointer py-4 bg-blue-900 hover:bg-cyan-800 focus:bg-blue-900" :class="{'bg-purple-500': openTab != 2}"  >Map</div></a>
 		</li>
 		<li @click="openTab = 3" class="w-full h-full">
-			<a><div class="cursor-pointer py-4 bg-blue-900 hover:bg-cyan-800 focus:bg-blue-900" :class="{'bg-purple-500': openTab != 2}"  >Contacts</div></a>
+			<a><div class="cursor-pointer py-4 bg-blue-900 hover:bg-cyan-800 focus:bg-blue-900" :class="{'bg-purple-500': openTab != 3}"  >Contacts</div></a>
+		</li>
+		<li @click="openTab = 4" class="w-full h-full">
+			<a><div class="cursor-pointer py-4 bg-blue-900 hover:bg-cyan-800 focus:bg-blue-900" :class="{'bg-purple-500': openTab != 4}"  >News</div></a>
 		</li>
 		</ul>
 
 
 	<div class="w-full pt-4 font-body text-left pb-8 px-4 mb-4 bg-blue-700 p-4 border-l-4 border-blue-300">
 		<div x-show="openTab === 1">
-			Fill in the following form. After registering, we will send you an email containing your invoice and payment details.
-					<div class="text-center my-6 w-full"><a class="block md:inline px-8 py-2 mx-2 font-semibold bg-purple-400 rounded-full hover:text-gray-900 hover:bg-blue-200" href="https://forms.gle/MBDa9pMNgNJUm4PX6">Individual Registration</a></div>
-					<div class="text-center my-6 w-full"><a class="block md:inline px-8 py-2 mx-2 font-semibold bg-purple-400 rounded-full hover:text-gray-900 hover:bg-blue-200" href="https://forms.gle/SWjk9pz5F7LPjdzY8">Advisor Registration</a></div>
+
+<div class="flex flex-col xl:flex-row  max-w-xl xl:max-w-none mx-auto">
+	<div class="basis-1/3 p-4 text-center ">
+        <div class="font-display text-blue-200 text-xl p-2 pt-4">7 July 2023</div>
+        <div class="font-display text-blue-200 p-2 pb-4">Friday</div>
+ <table class="table-fixed w-full">
+  <tbody class="">
+    <tr class="even:bg-blue-700 odd:bg-blue-600 h-10">
+      <td class="p-4 font-light w-32 md:w-48">12:30pm - 3:15pm</td>
+      <td class="p-4 font-semibold">Registration</td>
+    </tr>
+    <tr class="even:bg-blue-700 odd:bg-blue-600 h-10">
+      <td class="p-4 font-light">3:30pm - 5:00pm</td>
+      <td class="p-4 font-semibold ">Opening Ceremony</td>
+    </tr>
+    <tr class="even:bg-blue-700 odd:bg-blue-600 h-10">
+      <td class="p-4 font-light">5:00pm - 5:30pm</td>
+      <td class="p-4 font-semibold ">Briefing: MUN 101</td>
+    </tr>
+    <tr class="even:bg-blue-700 odd:bg-blue-600 h-10">
+      <td class="p-4 font-light">5:30pm - 5:50pm</td>
+      <td class="p-4 font-semibold ">Prayers Break</td>
+    </tr>
+    <tr class="even:bg-blue-700 odd:bg-blue-600 h-10">
+      <td class="p-4 font-light">6:00pm - 7:30pm</td>
+      <td class="p-4 font-black ">Council Session 1</td>
+    </tr>
+    <tr class="even:bg-blue-700 odd:bg-blue-600 h-10">
+      <td class="p-4 font-light">7:30pm - 8:30pm</td>
+      <td class="p-4 font-semibold ">Dinner</td>
+    </tr>
+    <tr class="even:bg-blue-700 odd:bg-blue-600 h-10">
+      <td class="p-4 font-light">8:30pm</td>
+      <td class="p-4 font-semibold ">Dismissal</td>
+    </tr>
+  </tbody>
+</table>  
+</div>
+
+	<div class="basis-1/3 p-4 text-center">
+        <div class="font-display text-blue-400 text-xl p-2 pt-4">8 July 2023</div>
+        <div class="font-display text-blue-400 p-2 pb-4">Saturday</div>
+ <table class="table-fixed w-full">
+  <tbody class="">
+    <tr class="even:bg-cyan-600 odd:bg-cyan-700 h-10">
+      <td class="p-4 font-light w-32 md:w-48">8:00am - 8:30am</td>
+      <td class="p-4 font-semibold">Breakfast</td>
+    </tr>
+    <tr class="even:bg-cyan-600 odd:bg-cyan-700 h-10">
+      <td class="p-4 font-light">8:30am - 10:30am</td>
+      <td class="p-4 font-black ">Council Session 2</td>
+    </tr>
+    <tr class="even:bg-cyan-600 odd:bg-cyan-700 h-10">
+      <td class="p-4 font-light">10:30am - 10:45am</td>
+      <td class="p-4 font-semibold ">Break</td>
+    </tr>
+    <tr class="even:bg-cyan-600 odd:bg-cyan-700 h-10">
+      <td class="p-4 font-light">10:45am - 12:30pm</td>
+      <td class="p-4 font-black ">Council Session 3</td>
+    </tr>
+    <tr class="even:bg-cyan-600 odd:bg-cyan-700 h-10">
+      <td class="p-4 font-light">1:00pm</td>
+      <td class="p-4 font-semibold ">Lunch</td>
+    </tr>
+    <tr class="even:bg-cyan-600 odd:bg-cyan-700 h-10">
+      <td class="p-4 font-light">3:00pm - 5:00pm</td>
+      <td class="p-4 font-black ">Council Session 4</td>
+    </tr>
+    <tr class="even:bg-cyan-600 odd:bg-cyan-700 h-10">
+      <td class="p-4 font-light">5:00pm - 5:15pm</td>
+      <td class="p-4 font-semibold ">Break</td>
+    </tr>
+    <tr class="even:bg-cyan-600 odd:bg-cyan-700 h-10">
+      <td class="p-4 font-light">5:15pm - 7:15pm</td>
+      <td class="p-4 font-black ">Council Session 5</td>
+    </tr>
+    <tr class="even:bg-cyan-600 odd:bg-cyan-700 h-10">
+      <td class="p-4 font-light">7:30pm - 8:30pm</td>
+      <td class="p-4 font-semibold ">Dinner</td>
+    </tr>
+    <tr class="even:bg-cyan-600 odd:bg-cyan-700 h-10">
+      <td class="p-4 font-light">8:30pm - 10:00pm</td>
+      <td class="p-4 font-semibold ">Meetup Mixer</td>
+    </tr>
+    <tr class="even:bg-cyan-600 odd:bg-cyan-700 h-10">
+      <td class="p-4 font-light">10:15pm</td>
+      <td class="p-4 font-semibold ">Dismissal</td>
+    </tr>
+  </tbody>
+</table>  
+</div>
+
+	<div class="basis-1/3 p-4 text-center">
+        <div class="font-display text-blue-200 text-xl p-2 pt-4">9 July 2023</div>
+        <div class="font-display text-blue-200 p-2 pb-4">Sunday</div>
+ <table class="table-fixed w-full">
+  <tbody class="">
+    <tr class="even:bg-blue-700 odd:bg-blue-600 h-10">
+      <td class="p-4 font-light w-32 md:w-48">8:00am - 8:30am</td>
+      <td class="p-4 font-semibold">Breakfast</td>
+    </tr>
+    <tr class="even:bg-blue-700 odd:bg-blue-600 h-10">
+      <td class="p-4 font-light">8:30am - 10:30am</td>
+      <td class="p-4 font-black ">Council Session 6</td>
+    </tr>
+    <tr class="even:bg-blue-700 odd:bg-blue-600 h-10">
+      <td class="p-4 font-light">10:30am - 10:45am</td>
+      <td class="p-4 font-semibold ">Break</td>
+    </tr>
+    <tr class="even:bg-blue-700 odd:bg-blue-600 h-10">
+      <td class="p-4 font-light">10:45am - 12:30pm</td>
+      <td class="p-4 font-black ">Council Session 7</td>
+    </tr>
+    <tr class="even:bg-blue-700 odd:bg-blue-600 h-10">
+      <td class="p-4 font-light">12:30pm</td>
+      <td class="p-4 font-semibold ">Lunch</td>
+    </tr>
+    <tr class="even:bg-blue-700 odd:bg-blue-600 h-10">
+      <td class="p-4 font-light">2:20pm - 4:30pm</td>
+      <td class="p-4 font-semibold ">Awards Ceremony</td>
+    </tr>
+    <tr class="even:bg-blue-700 odd:bg-blue-600 h-10">
+      <td class="p-4 font-light">4:30pm</td>
+      <td class="p-4 font-semibold ">Goodbye</td>
+    </tr>
+  </tbody>
+</table>  
+</div>
+</div>
 		</div>
 
 	  	<div x-show="openTab === 2">
-			Fill in the following form and email it to <a class="text-blue-400 hover:underline" href="mailto:register@gmun.my">register@gmun.my</a>. After registering, we will send you an email containing your invoice and payment details.
-					<div class="text-center my-6 w-full"><a class="block md:inline px-8 py-2 mx-2 font-semibold bg-purple-400 rounded-3xl hover:text-gray-900 hover:bg-blue-200" href="/GMUN_2023_Group_Registration.pdf"><img class="inline h-6 px-2" src="/images/pdf.svg">Download Group Registration Form</a></div>
-			Please note that a delegation should consist of no less than 5 delegates and no more than 10 delegates. <br> A delegation is allowed to have no more than 2 advisors, though they are not required.
+            To be updated.
 	  	</div>
 	</div>
 
