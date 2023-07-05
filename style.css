@@ -1666,7 +1666,7 @@ video {
   }
 
   .xl\:max-w-12 {
-    max-width: 12rem;
+    max-width: 16rem;
   }
   .xl\:max-w-none {
     max-width: none;
