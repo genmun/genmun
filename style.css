@@ -1657,6 +1657,17 @@ video {
     height: 9rem;
   }
 
+  .xl\:max-w-4 {
+    max-width: 4rem;
+  }
+
+  .xl\:max-w-8 {
+    max-width: 8rem;
+  }
+
+  .xl\:max-w-12 {
+    max-width: 12rem;
+  }
   .xl\:max-w-none {
     max-width: none;
   }
@@ -1673,3 +1684,4 @@ video {
 .break-words {
     overflow-wrap: break-word;
 }
+
