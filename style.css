@@ -1685,3 +1685,7 @@ video {
     overflow-wrap: break-word;
 }
 
+
+max-w-8 {
+    max-width: 8rem;
+}
