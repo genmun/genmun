@@ -84,10 +84,10 @@
 			<a><div class="cursor-pointer py-4 bg-blue-900 hover:bg-cyan-800 focus:bg-blue-900" :class="{'bg-purple-500': openTab != 2}"  >Map</div></a>
 		</li>
 		<li @click="openTab = 3" class="w-full h-full">
-			<a><div class="cursor-pointer py-4 bg-blue-900 hover:bg-cyan-800 focus:bg-blue-900" :class="{'bg-purple-500': openTab != 3}"  >Contacts</div></a>
+			<a><div class="cursor-pointer py-4 bg-blue-900 hover:bg-cyan-800 focus:bg-blue-900" :class="{'bg-purple-500': openTab != 3}"  >News</div></a>
 		</li>
 		<li @click="openTab = 4" class="w-full h-full">
-			<a><div class="cursor-pointer py-4 bg-blue-900 hover:bg-cyan-800 focus:bg-blue-900" :class="{'bg-purple-500': openTab != 4}"  >News</div></a>
+			<a><div class="cursor-pointer py-4 bg-blue-900 hover:bg-cyan-800 focus:bg-blue-900" :class="{'bg-purple-500': openTab != 4}"  >Info</div></a>
 		</li>
 		</ul>
 
@@ -227,10 +227,15 @@
 		</div>
 
 	  	<div x-show="openTab === 2">
+
+<div class="font-display text-2xl lg:text-3xl py-4 text-center">MAP</div>
+
             To be updated.
 	  	</div>
 
-	  	<div x-show="openTab === 3" class="py-10">
+	  	<div x-show="openTab === 4" class="py-10">
+
+<div class="font-display text-2xl lg:text-3xl py-4 text-center">Information</div>
             <div class="flex flex-col lg:flex-row ">
 	            <div class="basis-1/2 py-4 lg:p-10 text-center">
                 <div class="font-display p-5">Emergency Contact</div>
@@ -248,8 +253,9 @@
 
 	  	</div>
 
-	  	<div x-show="openTab === 4">
-            Breaking News by IPC. To be updated.
+	  	<div x-show="openTab === 3">
+<div class="font-display text-2xl lg:text-3xl py-4 text-center">News</div>
+            Breaking News by International Press Corps. To be updated.
 	  	</div>
 	</div>
 
