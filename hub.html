@@ -74,6 +74,11 @@
     DELEGATES HUB
 </div>
 
+<div x-show="openTab === 1" class="font-display text-2xl lg:text-3xl pt-24 text-center">SCHEDULE</div>
+<div x-show="openTab === 2" class="font-display text-2xl lg:text-3xl pt-24 text-center">MAP</div>
+<div x-show="openTab === 3" class="font-display text-2xl lg:text-3xl pt-24 text-center">CONTACTS</div>
+<div x-show="openTab === 4" class="font-display text-2xl lg:text-3xl pt-24 text-center">NEWS</div>
+
 	<div x-data="{ openTab: 1 }" class="py-6">
 		<ul class="text-center flex border-b w-full font-lg font-bold max-w-sm xl:max-w-none mx-auto">
 		<li @click="openTab = 1" class="w-full h-full">
