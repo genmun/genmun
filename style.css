@@ -558,7 +558,7 @@ video {
 }
 
 .top-40 {
-  top: 12rem;
+  top: 16rem;
 }
 
 .z-40 {
@@ -1657,6 +1657,17 @@ video {
     height: 9rem;
   }
 
+  .xl\:max-w-4 {
+    max-width: 4rem;
+  }
+
+  .xl\:max-w-8 {
+    max-width: 8rem;
+  }
+
+  .xl\:max-w-12 {
+    max-width: 16rem;
+  }
   .xl\:max-w-none {
     max-width: none;
   }
@@ -1668,4 +1679,13 @@ video {
   .xl\:flex-row {
     flex-direction: row;
   }
+}
+
+.break-words {
+    overflow-wrap: break-word;
+}
+
+
+.max-w-8 {
+    max-width: 8rem;
 }

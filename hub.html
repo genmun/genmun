@@ -6,7 +6,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<title>Delegates Hub | GMUN 2023</title>
+	<title>Delegate Hub | GMUN 2023</title>
 
 	<link rel="stylesheet" href="/style.css" type="text/css" media="all" />
 	<link rel="shortcut icon" type="image/x-icon" href="/images/favicon.ico">
@@ -58,21 +58,22 @@
 				<div class="px-2 py-2 bg-blue-600 rounded-md shadow dark-mode:bg-gray-800">
 					<a class="block px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg lg:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="/programme-schedule">Schedule</a>
 					<a class="block px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg lg:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="/accommodation">Accommodation</a>
-					<a class="block px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg lg:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="/resources">Resources</a>
+					<a class="block px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg lg:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="/resources">Resources</a><a class="block px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg lg:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="/register">Registration</a>
 				</div>
 			</div>
 		</div>
 		<a class="px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg lg:mt-0 lg:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="/councils/overview">Councils</a>
-		<a class="px-8 py-2 mt-2 text-sm font-semibold bg-purple-400 lg:mt-0 lg:ml-4" href="/register" style="background: #425D80; color: #A3AEBC; border-radius: 0.75rem;">Registration Closed</a>
+		<a class="px-8 py-2 mt-2 text-sm font-semibold bg-purple-400 rounded-full lg:mt-0 lg:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-blue-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="/hub">Delegate Hub</a>
 		</nav>
   	</div>
 </div>
 
 <main class="px-4 pd:mx-12 pb-4" style="min-height: calc(100vh - 10rem); background: linear-gradient(to top, #03045E 0%, #00B4D8 100%);">
 
-<div class="font-display text-2xl lg:text-3xl pt-24 text-center">
-    DELEGATES HUB
+<div class="font-display text-xl lg:text-xl pt-24 text-center">
+    DELEGATE HUB
 </div>
+
 
 	<div x-data="{ openTab: 1 }" class="py-6">
 		<ul class="text-center flex border-b w-full font-lg font-bold max-w-sm xl:max-w-none mx-auto">
@@ -83,10 +84,10 @@
 			<a><div class="cursor-pointer py-4 bg-blue-900 hover:bg-cyan-800 focus:bg-blue-900" :class="{'bg-purple-500': openTab != 2}"  >Map</div></a>
 		</li>
 		<li @click="openTab = 3" class="w-full h-full">
-			<a><div class="cursor-pointer py-4 bg-blue-900 hover:bg-cyan-800 focus:bg-blue-900" :class="{'bg-purple-500': openTab != 3}"  >Contacts</div></a>
+			<a><div class="cursor-pointer py-4 bg-blue-900 hover:bg-cyan-800 focus:bg-blue-900" :class="{'bg-purple-500': openTab != 3}"  >News</div></a>
 		</li>
 		<li @click="openTab = 4" class="w-full h-full">
-			<a><div class="cursor-pointer py-4 bg-blue-900 hover:bg-cyan-800 focus:bg-blue-900" :class="{'bg-purple-500': openTab != 4}"  >News</div></a>
+			<a><div class="cursor-pointer py-4 bg-blue-900 hover:bg-cyan-800 focus:bg-blue-900" :class="{'bg-purple-500': openTab != 4}"  >Info</div></a>
 		</li>
 		</ul>
 
@@ -94,6 +95,7 @@
 	<div class="w-full pt-4 font-body text-left pb-8 px-4 mb-4 p-4">
 		<div x-show="openTab === 1">
 
+<div class="font-display text-2xl lg:text-3xl py-4 text-center">SCHEDULE</div>
 <div class="flex flex-col xl:flex-row  max-w-xl xl:max-w-none mx-auto">
 	<div class="basis-1/3 p-4 text-center ">
         <div class="font-display text-blue-200 text-xl p-2 pt-4">7 July 2023</div>
@@ -106,7 +108,7 @@
     </tr>
     <tr class="even:bg-blue-700 odd:bg-blue-600 h-10">
       <td class="p-4 font-light">3:30pm - 5:00pm</td>
-      <td class="p-4 font-semibold ">Opening Ceremony</td>
+      <td class="p-4 font-semibold "><a class="text-blue-400 hover:underline" href="/opening">Opening Ceremony</a></td>
     </tr>
     <tr class="even:bg-blue-700 odd:bg-blue-600 h-10">
       <td class="p-4 font-light">5:00pm - 5:30pm</td>
@@ -212,7 +214,7 @@
     </tr>
     <tr class="even:bg-blue-700 odd:bg-blue-600 h-10">
       <td class="p-4 font-light">2:20pm - 4:30pm</td>
-      <td class="p-4 font-semibold ">Awards Ceremony</td>
+      <td class="p-4 font-semibold "><a  class="text-blue-400 hover:underline" href="/closing">Closing Ceremony</td>
     </tr>
     <tr class="even:bg-blue-700 odd:bg-blue-600 h-10">
       <td class="p-4 font-light">4:30pm</td>
@@ -225,10 +227,18 @@
 		</div>
 
 	  	<div x-show="openTab === 2">
-            To be updated.
+
+<div class="font-display text-2xl lg:text-3xl py-4 text-center">MAP</div>
+
+    <object class="py-6" data="/MAP_GMUN23.pdf" type="application/pdf" width="100%" height="500px">
+      <p>Unable to display PDF file? <a href="/MAP_GMUN23.pdf">Download</a> instead.</p>
+    </object>
+
 	  	</div>
 
-	  	<div x-show="openTab === 3" class="py-10">
+	  	<div x-show="openTab === 4" class="py-10">
+
+<div class="font-display text-2xl lg:text-3xl py-4 text-center">Information</div>
             <div class="flex flex-col lg:flex-row ">
 	            <div class="basis-1/2 py-4 lg:p-10 text-center">
                 <div class="font-display p-5">Emergency Contact</div>
@@ -239,14 +249,16 @@
 
                 <div class="basis-1/2 py-4 lg:p-10 text-center">
                     <div class="font-display p-5">Other Inquiries</div>
-                    <div class="">genmodelun@gmail.com</div>
+                    <div class="">If you have any questions or inquiries, please do not hesitate to reach out to us directly at <a class="text-blue-400 hover:underline" href="mailto:genmodelun@gmail.com">genmodelun@gmail.com</a>.</div>
+
                 </div>
             </div>
 
 	  	</div>
 
-	  	<div x-show="openTab === 4">
-            Breaking News by IPC. To be updated.
+	  	<div x-show="openTab === 3">
+<div class="font-display text-2xl lg:text-3xl py-4 text-center">News</div>
+            Breaking News by International Press Corps. To be updated.
 	  	</div>
 	</div>
 
