@@ -1,4 +1,4 @@
-# GENIUS Model United Nations 2023 Website
+# GENIUS Model United Nations 2023 Official Website
 
 This repository contains source code for the official website of GENIUS Model United Nations 2023, [https://gmun.my](https://gmun.my), which is held from 7th to 9th July 2023 by Pusat GENIUS@Pintar Negara UKM. 
 
@@ -26,6 +26,6 @@ The repository has two branches, the **Beta** (development) branch and the **Onl
 
 ## Credits
 
-This website is written by Jack.
+This website is written by Jack Lim.
 
 Special thanks to the high committee, advisors, multimedia commitee, and everyone else who made this possible.
