@@ -23,3 +23,9 @@ The website is hosted with the free version of [Netlify](https://www.netlify.com
 ### Development Branch
 
 The repository has two branches, the **Beta** (development) branch and the **Online** (production). All changes to the website are pushed to the [Beta site](https://beta--gmun.netlify.app/) first before being released to the public in the **Online** branch.
+
+## Credits
+
+This website is written by Jack.
+
+Special thanks to the high committee, advisors, multimedia commitee, and everyone else who made this possible.
